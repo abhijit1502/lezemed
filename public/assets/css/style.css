@@ -3148,6 +3148,10 @@ textarea.is-invalid {
     z-index: 2;
 }
 
+.title-area .t1 {
+    font-size: 60px;
+}
+
 .title-area.style2 {
     margin-top: -8px;
 }
@@ -26099,3 +26103,21 @@ ul.info-number-list li span {
         left: 5px !important;
     }
 }
+
+.cta-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+@media only screen and (max-width: 767px) {
+    .cta-btn{
+        display: block;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .cta-btn .download-btn{
+    margin-top: 15px;
+    }
+}
+

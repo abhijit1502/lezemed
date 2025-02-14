@@ -333,18 +333,18 @@ function Home() {
           <div className="background-image" style={{ backgroundImage: 'url("assets/img/bg/Bg-Green-2.jpg")' }}>
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-xl-12 d-flex justify-content-between align-items-baseline">
-                  <div className="pb-5 pb-xl-0 mb-5 mt-5">
-                    <div className="title-area mb-30 text-center text-xl-start">
-                      <h2 className="sec-title" style={{color:'#00a651'}}>Ready to get started?</h2>
+                <div className="col-xl-12">
+                  <div className="mb-5 mt-5 cta-btn">
+                    <div className="title-area mb-0 text-center text-xl-start">
+                      <h2 className="sec-title t1" style={{color:'#00a651'}}>Ready to get started?</h2>
                       <p className="brand-text mb-n2 m-0 text-white">
                         Order a transfer in less than a minute with our app.
                       </p>
                     </div>
-                  </div>
-                  <div className="btn-wrap download-btn justify-content-center justify-content-xl-start">
+                    <div className="btn-wrap download-btn justify-content-center justify-content-xl-start">
                       <NavLink to="#" className="th-btn style10">Sign up Now</NavLink>
                     </div>
+                  </div>                  
                 </div>
               </div>
             </div>
