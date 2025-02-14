@@ -5,9 +5,9 @@ function Help_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Help | eRemitly</title>
+                <title>Help | Le-Zemed</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Help | eRemitly" />
+                <meta property="og:title" content="Help | Le-Zemed" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

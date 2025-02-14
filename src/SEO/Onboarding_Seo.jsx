@@ -5,9 +5,9 @@ function Onboarding_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Onboarding | eRemitly</title>
+                <title>Onboarding | Le-Zemed</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Onboarding | eRemitly" />
+                <meta property="og:title" content="Onboarding | Le-Zemed" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />
