@@ -67,7 +67,7 @@ function Footer() {
                                         <div className="about-logo">
                                             <NavLink className="icon-masking" to="/">
                                                 {/* <span data-mask-src="assets/img/logo.svg" className="mask-icon" /> */}
-                                                <img src="assets/img/logo.png" alt="Le-Zemed" />
+                                                <img src="assets/img/logo.png" alt="Le-Zemed" style={{maxWidth:'50%'}}/>
                                             </NavLink>
                                         </div>
                                         <p className="about-text">

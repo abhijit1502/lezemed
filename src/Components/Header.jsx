@@ -73,7 +73,7 @@ function Header() {
                                 <div className="col-auto">
                                     <div className="header-logo">
                                         <NavLink className="icon-masking" to="/">
-                                            <img src="assets/img/logo.png" alt="Le-Zemed" />
+                                            <img src="assets/img/logo.png" alt="Le-Zemed" style={{maxWidth:'27%'}}/>
                                         </NavLink>
                                     </div>
                                 </div>
