@@ -11,34 +11,43 @@ function Calculator() {
   if (pageid === undefined) {
     pageid = '3';
   }
-  const [selectedCountry, setSelectedCountry] = useState(pageid); // Default selected country ID
+  const [selectedCountry, setSelectedCountry] = useState(pageid);
   const [selectedBranchId, setSelectedBranchId] = useState('2');
   const [selectedCountryDetails, setSelectedCountryDetails] = useState(null);
   const [currencyList, setCurrencyList] = useState([]);
-  const [amount, setAmount] = useState('');
-  const [rate, setRate] = useState('00'); // Set default to "00"
+  const [amount, setAmount] = useState('100.00');
+  const [rate, setRate] = useState('');
   const [currencyCode, setCurrencyCode] = useState('');
-  const [fees, setFees] = useState('00'); // Set default to "00"
+  const [fees, setFees] = useState('00');
   const [calculatedAmount, setCalculatedAmount] = useState('');
   const [collectionTypes, setCollectionTypes] = useState([]);
+  const [paymentTypes, setPaymentTypes] = useState([]);
   const [selectedCollectionType, setSelectedCollectionType] = useState('');
   const [selectedCollectionTypeName, setSelectedCollectionTypeName] = useState('');
+  const [selectedPaymentType, setSelectedPaymentType] = useState('');
+  const [payementtypeId, setpaymenttypeId] = useState('');
+  const [countryId, setcountryId] = useState('');
   const [deliveryTypes, setDeliveryTypes] = useState([]);
+  const [BasecurrencyData, setBasecurencydata] = useState([]);
+  const [BasecurrencyId, setbasecurrencyId] = useState('');
   const [selectedDeliveryType, setSelectedDeliveryType] = useState('');
   const [selectBasecountryId, setselectBasecountryId] = useState('');
+  const [youSendInput, setyouSendInput] = useState(false);
+  const [RecipentGetInput, setRecipentGetInput] = useState(false);
+  const [userEnteredAmount, setUserEnteredAmount] = useState(amount);
+  const [minimumFractionDigits, setMinimumFractionDigits] = useState(2);
   const [isLoading, setIsLoading] = useState(false);
-  const baseUrl = '../ApiConfig.js'
+  const baseUrl = '../ApiConfig.js';
   const location = useLocation();
   const amountTimeoutRef = useRef(null);
+
   const baseCountryFlags = {
     1: 'assets/img/flags/gbp.png',
     6: 'assets/img/flags/eur.png',
-    17: 'assets/img/flags/cad.png',
   };
   const [baseCountryFlag, setBaseCountryFlag] = useState(baseCountryFlags['1']);
 
   // Parse URL to set the selected country
-
   useEffect(() => {
     const pathParts = location.pathname.split('_');
     if (pathParts.length > 1) {
@@ -52,10 +61,29 @@ function Calculator() {
     }
   }, [location.pathname, countries]);
 
+  useEffect(() => {
+    axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/basecurrencylist`, {
+      clientID: '1',
+      branchID: selectedBranchId,
+    })
+      .then((response) => {
+        if (response?.data?.response && response?.data?.data) {
+          setBasecurencydata(response.data.data);
+          const defaultCollectionType = response?.data?.data[0];
+          if (defaultCollectionType) {
+            setbasecurrencyId(defaultCollectionType?.baseCurrencyID.toString());
+            setcountryId(defaultCollectionType?.countryID.toString());
+          }
+        }
+      })
+      .catch((error) => console.error('Error fetching payment types:', error));
+  }, [selectedBranchId]);
+
   // Fetch countries on component mount
   useEffect(() => {
-    axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/checklistcountry`, { 
-clientID: '1' })
+    axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/checklistcountry`, {
+      clientID: '1'
+    })
       .then((response) => {
         if (response.data.response && response.data.data) {
           setCountries(response.data.data);
@@ -122,6 +150,27 @@ clientID: '1' })
   }, [selectedCountry, selectedBranchId]);
 
   useEffect(() => {
+    axios.post(`${ApiConfig.baseUrl}/paymenttype/getpaytypes`, {
+      clientID: '1',
+      branchID: selectedBranchId,
+      customerID: "",
+      baseCountryID: countryId,
+      isApp: "0"
+    })
+      .then((response) => {
+        if (response.data.response && response.data.data) {
+          setPaymentTypes(response.data.data);
+          const defaultCollectionType = response.data.data[0];
+          if (defaultCollectionType) {
+            setpaymenttypeId(defaultCollectionType.payTypeID.toString());
+            setSelectedPaymentType(defaultCollectionType.payType);
+          }
+        }
+      })
+      .catch((error) => console.error('Error fetching payment types:', error));
+  }, [selectedBranchId, countryId]);
+
+  useEffect(() => {
     if (amount && selectedCountry && currencyCode) {
       if (amountTimeoutRef.current) {
         clearTimeout(amountTimeoutRef.current);
@@ -131,13 +180,13 @@ clientID: '1' })
         axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/checkrateslistcountry`, {
           clientID: '1',
           countryID: selectedCountry,
-          paymentTypeID: "2",
+          paymentTypeID: payementtypeId,
           paymentDepositTypeID: selectedCollectionType,
           deliveryTypeID: selectedDeliveryType,
           transferAmount: amount,
           currencyCode: currencyCode,
           branchID: selectedBranchId,
-          BaseCurrencyID: ApiConfig.primaryCurrencyID || "1"
+          BaseCurrencyID: BasecurrencyId
         })
           .then((response) => {
             if (response.data.response && response.data.data && response.data.data.length > 0) {
@@ -155,11 +204,13 @@ clientID: '1' })
               });
               if (!foundRate) {
                 toast.error("Rates And Fees Are Not Available For This Country");
+                setRate('0');
                 setAmount('0');
                 setCalculatedAmount('0');
               }
             } else {
               toast.error("Rates And Fees Are Not Available For This Country");
+              setRate('0');
               setAmount('0');
               setCalculatedAmount('0');
             }
@@ -168,7 +219,31 @@ clientID: '1' })
           .finally(() => setIsLoading(false));
       }, 1000);
     }
-  }, [amount, selectedCountry, currencyCode, selectedCollectionType, selectedDeliveryType, selectedBranchId, selectBasecountryId]);
+  }, [amount, selectedCountry, currencyCode, selectedCollectionType, BasecurrencyId, payementtypeId, selectedDeliveryType, selectedBranchId, selectBasecountryId]);
+
+  const handleBasecountryIdChange = (event) => {
+    const newBasecountryId = event.target.value;
+    setselectBasecountryId(newBasecountryId);
+    setBaseCountryFlag(baseCountryFlags[newBasecountryId]);
+  };
+
+  const handleDeliveryTypeChange = (event) => {
+    event.preventDefault();
+    const selectedDeliveryType = event.target.value;
+    setSelectedDeliveryType(selectedDeliveryType);
+  };
+
+  const handleCollectionTypeChange = (event) => {
+    event.preventDefault();
+    const selectedCollectionType = event.target.value;
+    setSelectedCollectionType(selectedCollectionType);
+  };
+
+  const handlePayementTypeChange = (event) => {
+    event.preventDefault();
+    const selectedPaymentType = event.target.value;
+    setpaymenttypeId(selectedPaymentType);
+  };
 
 
   const handleCountryChange = (event) => {
@@ -182,43 +257,111 @@ clientID: '1' })
   };
 
   const handleAmountChange = (event) => {
-    let newAmount = event.target.value.replace(/[^\d.]/g, '').replace(/^(\d*\.?)|(\d*)\.?/g, '$1$2');
-    if (newAmount.length > 12) {
-      newAmount = newAmount.substring(0, 12);
+    event.preventDefault();
+    const newAmount = event.target.value;
+    setyouSendInput(true);
+
+    // Remove leading zeros
+    let cleanedAmount = newAmount.replace(/^0+/, '');
+
+    // Allow typing with .00 or without it
+    if (cleanedAmount.endsWith('.00')) {
+        cleanedAmount = cleanedAmount.slice(0, -3); // Remove the .00 for valid input
     }
-    setAmount(newAmount);
-    setCalculatedAmount((newAmount * rate).toFixed(2) || '');
-  };
+
+    // Check if the cleaned amount is a valid number
+    if (!isNaN(cleanedAmount)) {
+        // Limit the input to 12 digits
+        if (cleanedAmount.length <= 12) {
+            setAmount(cleanedAmount);
+            setUserEnteredAmount(cleanedAmount);
+        } else {
+            // Allow input after 12 digits
+            setAmount(cleanedAmount.substring(0, 12)); // Limit to 12 digits
+            setUserEnteredAmount(cleanedAmount.substring(0, 12));
+        }
+    } else {
+        // Handle non-numeric input
+        setAmount('0');
+        setUserEnteredAmount('0');
+        // setRate('0');
+        // setFees('0');
+        setCalculatedAmount('0');
+    }
+};
 
   const handleCalculatedAmountChange = (event) => {
-    let newCalculatedAmount = event.target.value.replace(/[^\d.]/g, '').replace(/^(\d*\.?)|(\d*)\.?/g, '$1$2');
+    event.preventDefault();
+    let newCalculatedAmount = event.target.value;
+    setRecipentGetInput(true);
+    // Remove any non-numeric characters from the input
+    newCalculatedAmount = newCalculatedAmount.replace(/[^0-9.]/g, '');
+
+    // Ensure the input does not exceed 7 digits
     if (newCalculatedAmount.length > 12) {
-      newCalculatedAmount = newCalculatedAmount.substring(0, 12);
+      newCalculatedAmount = newCalculatedAmount.slice(0, 0);
     }
+
+    // Update the state with the cleaned amount
     setCalculatedAmount(newCalculatedAmount);
-    setAmount((newCalculatedAmount / rate).toFixed(2) || '');
+    setUserEnteredAmount(newCalculatedAmount / rate || '');
+    setAmount(newCalculatedAmount / rate || '');
   };
 
-  const handleAmountFocus = (event) => {
-    event.target.value = event.target.value.replace(/,/g, '');
-  };
 
   const handleAmountBlur = (event) => {
-    event.target.value = parseFloat(event.target.value).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    let value = event.target.value;
+  
+    // Remove any non-numeric characters (except for decimal points)
+    value = value.replace(/[^0-9.]/g, '');
+  
+    // Check if the value is a valid number
+    if (!isNaN(value) && value !== '') {
+      // Convert to float
+      const numericValue = parseFloat(value);
+  
+      // Only format if the value is greater than 0
+      if (numericValue > 0) {
+        const formattedValue = numericValue.toFixed(2);
+        setAmount(formattedValue); // Update the state
+        setUserEnteredAmount(formattedValue); // Update user entered amount
+        event.target.value = formattedValue; // Ensure input reflects formatted value
+      } else {
+        // If the value is 0 or empty, reset to an empty string
+        setAmount('0');
+        setUserEnteredAmount('0');
+        event.target.value = '0';
+      }
+    } else {
+      // If not a valid number, reset to an empty string
+      setAmount('0');
+      setUserEnteredAmount('0');
+      event.target.value = '0';
+    }
   };
+  
+    const handleInputFocusOut = () => {
+      setMinimumFractionDigits(2);
+    };
+  
+    const handleInputFocus = () => {
+      // Set minimumFractionDigits to 0 when focus is in
+      setMinimumFractionDigits(0);
+    };
 
   const handleContinue = (event) => {
     event.preventDefault();
-    // Calculate result in the current component without navigation
     if (!selectedCollectionType || !selectedDeliveryType || !amount) {
       toast.error("Please Fill All The Details.");
       return;
     }
     toast.success('Amount Calculated Successfully!');
+    // Open the link in a new tab
+    window.open('https://eremitly.com/app/app-login.html', '_blank');
   };
 
   return (
-    <div>
+    <>
       <div className="cal_css">
         <div className="service-charge-wrap">
           <form className="charge-form">
@@ -246,12 +389,13 @@ clientID: '1' })
                     type="text"
                     id="Number1"
                     name="send_money"
-                    value={amount}
+                    value={amount === '' ? '0' : amount}
                     onChange={handleAmountChange}
-                    onFocus={handleAmountFocus}
+                    //onBlur={handleInputBlur} // Call the blur handler here
                     onBlur={handleAmountBlur}
+                    disabled={rate === 0 ? true : false}
                     maxLength={12} // Limiting input to 12 characters
-                    placeholder='000'
+                    placeholder='0.00'
                   />
                   <img className="baseflag" src={baseCountryFlag} alt="GBP flag" />
                   <span className="inputgbp">GBP</span>
@@ -265,7 +409,7 @@ clientID: '1' })
                       <strong id="txtTransferFee" className="txtTransferFee">£{`${fees}`}</strong>
                     </div>
                     <div className="info-right">
-                      <span className='text-white'>Transfer Fee</span>
+                      <span className=''>Transfer Fee</span>
                     </div>
                   </li>
                   <li className="d-flex justify-content-between align-items-center">
@@ -274,11 +418,49 @@ clientID: '1' })
                       <strong className="txtExchangeRates">{rate} {currencyCode}</strong>
                     </div>
                     <div className="info-right">
-                      <span className='text-white'>Guaranted Rate</span>
+                      <span className=''>Guaranted Rate</span>
                     </div>
                   </li>
                 </ul>
               </div>
+              <select
+                label="Collection Type "
+                value={selectedCollectionType}
+                onChange={handleCollectionTypeChange}
+                className="select-delivery d-none"
+              >
+                {collectionTypes.map((collectionType) => (
+                  <option key={collectionType.paymentCollectionTypeID} value={collectionType.paymentCollectionTypeID}>
+                    {collectionType.typeName}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                label="Payment Type"
+                value={payementtypeId}
+                onChange={handlePayementTypeChange}
+                className="select-delivery d-none"
+              >
+                {paymentTypes.map((paymentTypes) => (
+                  <option key={paymentTypes.paymentCollectionTypeID} value={paymentTypes.payTypeID}>
+                    {paymentTypes?.payType}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                label="Delevery Type "
+                value={selectedDeliveryType}
+                onChange={handleDeliveryTypeChange}
+                className="select-delivery d-none"
+              >
+                {deliveryTypes.map((deliveryTypes) => (
+                  <option key={deliveryTypes.deliveryTypeID} value={deliveryTypes.deliveryTypeID}>
+                    {deliveryTypes?.deliveryType}
+                  </option>
+                ))}
+              </select>
               <div className="col-lg-12 col-md-12">
                 <div className="form-group">
                   <label htmlFor="send_money">Recipient gets</label>
@@ -286,12 +468,13 @@ clientID: '1' })
                     type="text"
                     id="Number2"
                     name="received_money"
-                    value={calculatedAmount}
+                    value={calculatedAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} // Comma-separated format
                     onChange={handleCalculatedAmountChange}
-                    onFocus={handleAmountFocus}
-                    onBlur={handleAmountBlur}
+                    onBlur={handleInputFocusOut}
+                    onFocus={handleInputFocus}
+                    disabled={rate === 0 ? true : false}
                     maxLength={12} // Limiting input to 12 characters
-                    placeholder='000'
+                    placeholder='0.00'
                   />
                   <img className="flagicon baseflag mt-0" src={selectedCountryDetails?.flag || selectedCountryDetails?.countryFlag} />
                   <select className="inputgbp">
@@ -299,19 +482,19 @@ clientID: '1' })
                   </select>
                 </div>
               </div>
-              <div className="col-lg-12 text-center mb-2">
+              {/* <div className="col-lg-12 text-center mb-2">
                 <p id="updatedate">Rates last updated on 18/09/2024 10:32 AM</p>
-              </div>
+              </div> */}
               <div className="col-lg-12 col-md-12">
                 <div className="form-group form-btn">
-                  <a href="#" className="default-btn w-100 d-block" disabled={isLoading}>Continue </a>
+                  <a href="#" className="default-btn w-100 d-block" onClick={handleContinue}>Continue </a>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

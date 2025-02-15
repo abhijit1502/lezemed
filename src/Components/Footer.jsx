@@ -88,8 +88,8 @@ function Footer() {
                                     <h3 className="widget_title">Quick Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/">Contact Us</NavLink></li>
-                                            <li><NavLink to="/">Help</NavLink></li>
+                                            <li><NavLink to="/contact">Contact Us</NavLink></li>
+                                            <li><NavLink to="/help">Help</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -99,9 +99,9 @@ function Footer() {
                                     <h3 className="widget_title">Legals Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/">Terms and Conditions</NavLink></li>
-                                            <li><NavLink to="/">Privacy Policy</NavLink></li>
-                                            <li><NavLink to="/">Complaint Policy</NavLink></li>
+                                            <li><NavLink to="/terms-and-conditions">Terms and Conditions</NavLink></li>
+                                            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
+                                            <li><NavLink to="/complaint-policy">Complaint Policy</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@ function Footer() {
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/mail.svg" /></div>
                                             <p className="box-text">
-                                                <NavLink to="mailto:aabileh@hotmail.com" className="box-link">aabileh@hotmail.com</NavLink>
+                                                <NavLink to="mailto:info@eremitly.com" className="box-link">aabileh@hotmail.com</NavLink>
                                             </p>
                                         </div>
                                         <div className="info-box">
@@ -137,7 +137,7 @@ function Footer() {
                 <div className="copyright-wrap text-center">
                     <div className="container">
                         <p className="copyright-text">
-                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">Le-Zemed </NavLink> All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
+                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
                             {/* <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
                         </p>
                     </div>

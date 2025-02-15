@@ -25581,7 +25581,7 @@ span.select2-selection.select2-selection--single:focus {
     border-radius: 20px;
     -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-    background: rgba(000, 000, 000, 0.7);
+    background: rgba(255, 255, 255, 0.4);
     -webkit-backdrop-filter: blur(24.9px);
     backdrop-filter: blur(24.9px);
 }
@@ -25624,45 +25624,49 @@ span.select2-selection.select2-selection--single:focus {
     display: block;
     margin: 0 0 5px;
     line-height: 1;
-    color: #fff;
+    color: #163235;
 }
 
 .service-charge-wrap .charge-form .form-group input {
     width: 100%;
     height: 54px;
-    background-color: transparent;
+    background-color: #CEE7D6;
     border: 1px solid var(--theme-color);
     border-top: none;
     border-left: none;
     border-right: none;
-    border-radius: 0 0 5px 0;
+    border-radius: 25px;
     padding: 10px 7px;
-    color: #fff;
+    color: #163235;
     font-weight: bolder;
     font-size: 20px;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .service-charge-wrap .charge-form .form-group select.myselect {
     width: 100%;
     height: 55px;
-    background-color: transparent;
+    background-color: #CEE7D6;
     border: 1px solid var(--theme-color);
     border-top: none;
     border-left: none;
     border-right: none;
-    border-radius: 0 0 5px 0;
+    border-radius: 25px;
     padding: 10px 7px;
-    color: #fff;
+    color: #163235;
     font-weight: bolder;
     font-size: 20px;
     position: relative;
     bottom: 0px;
     right: 7px;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23163235' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
     background-size: 10px 10px;
     background-position: 70% 50%;
     background-repeat: no-repeat, repeat;
     cursor: pointer;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
 
 .service-charge-wrap .charge-form .form-group select.myselect option {
@@ -25696,9 +25700,10 @@ span.select2-selection.select2-selection--single:focus {
     right: 0;
     background-color: var(--theme-color);
     color: #022124;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 5px 25px 25px 5px;
     width: 100px;
-    height: 54px;
+    height: 55px;
     padding: 15px 10px;
     border: none;
     /* background-image: url(../img/down-arrow-2.png);
@@ -25708,7 +25713,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .service-charge-wrap .charge-form .form-group select option {
-    background-color: #fff;
+    background-color: #070707;
     color: #000;
 }
 
@@ -25718,9 +25723,10 @@ span.select2-selection.select2-selection--single:focus {
     right: 0;
     background-color: var(--theme-color);
     color: #022124;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 5px 25px 25px 5px;
     width: 100px;
-    height: 54px;
+    height: 55px;
     padding: 15px 10px;
     border: none;
     background-size: 12px;

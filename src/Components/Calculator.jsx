@@ -9,7 +9,7 @@ function Calculator() {
   const [countries, setCountries] = useState([]);
   var pageid = countryIdPageMapping[window.location.pathname.replaceAll("/", "")];
   if (pageid === undefined) {
-    pageid = '3';
+    pageid = '6';
   }
   const [selectedCountry, setSelectedCountry] = useState(pageid);
   const [selectedBranchId, setSelectedBranchId] = useState('2');
@@ -40,14 +40,13 @@ function Calculator() {
   const baseUrl = '../ApiConfig.js';
   const location = useLocation();
   const amountTimeoutRef = useRef(null);
+  // const baseCountryFlags = {
+  //   1: 'assets/img/flags/gbp.png',
+  //   6: 'assets/img/flags/eur.png',
+  // };
+  const [baseCountryFlag, setBaseCountryFlag] = useState('');
+  const [baseCurrencyCode, setBaseCurrencyCode] = useState('');
 
-  const baseCountryFlags = {
-    1: 'assets/img/flags/gbp.png',
-    6: 'assets/img/flags/eur.png',
-  };
-  const [baseCountryFlag, setBaseCountryFlag] = useState(baseCountryFlags['1']);
-
-  // Parse URL to set the selected country
   useEffect(() => {
     const pathParts = location.pathname.split('_');
     if (pathParts.length > 1) {
@@ -61,25 +60,190 @@ function Calculator() {
     }
   }, [location.pathname, countries]);
 
+  const [baseCurrencyData, setBaseCurrencyData] = useState([]);
+  const [baseCurrencyId, setBaseCurrencyId] = useState("");
+
+  // Existing useEffect (unchanged)
   useEffect(() => {
-    axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/basecurrencylist`, {
-      clientID: '1',
-      branchID: selectedBranchId,
-    })
+    const pathParts = location.pathname.split("_");
+    if (pathParts.length > 1) {
+      const countryFromURL = pathParts[1];
+      const matchedCountry = countries.find(
+        (country) => country.countryName.toLowerCase() === countryFromURL.toLowerCase()
+      );
+      if (matchedCountry) {
+        setSelectedCountry(matchedCountry.countryID.toString());
+        setSelectedCountryDetails(matchedCountry);
+        setCurrencyCode(matchedCountry.countryCurrency);
+      }
+    }
+  }, [location.pathname, countries]);
+
+  const handleDeliveryTypeChange = (event) => {
+    event.preventDefault();
+    const selectedDeliveryType = event.target.value;
+    setSelectedDeliveryType(selectedDeliveryType);
+  };
+
+  const handleCollectionTypeChange = (event) => {
+    event.preventDefault();
+    const selectedCollectionType = event.target.value;
+    setSelectedCollectionType(selectedCollectionType);
+  };
+
+  const handlePayementTypeChange = (event) => {
+    event.preventDefault();
+    const selectedPaymentType = event.target.value;
+    setpaymenttypeId(selectedPaymentType);
+  };
+
+  const handleCountryChange = (event) => {
+    const newCountryId = event.target.value;
+    setSelectedCountry(newCountryId);
+    const newCountryDetails = countries.find(country => country.countryID.toString() === newCountryId);
+    setSelectedCountryDetails(newCountryDetails);
+    if (newCountryDetails) {
+      setCurrencyCode(newCountryDetails.countryCurrency);
+    }
+  };
+  const handleCalculatedAmountChange = (event) => {
+    event.preventDefault();
+    let newCalculatedAmount = event.target.value;
+    setRecipentGetInput(true);
+    // Remove any non-numeric characters from the input
+    newCalculatedAmount = newCalculatedAmount.replace(/[^0-9.]/g, '');
+
+    // Ensure the input does not exceed 7 digits
+    if (newCalculatedAmount.length > 12) {
+      newCalculatedAmount = newCalculatedAmount.slice(0, 0);
+    }
+
+    // Update the state with the cleaned amount
+    setCalculatedAmount(newCalculatedAmount);
+    setUserEnteredAmount(newCalculatedAmount / rate || '');
+    setAmount(newCalculatedAmount / rate || '');
+  };
+
+  const handleAmountChange = (event) => {
+    event.preventDefault();
+    const newAmount = event.target.value;
+    setyouSendInput(true);
+
+    // Remove leading zeros
+    let cleanedAmount = newAmount.replace(/^0+/, '');
+
+    // Allow typing with .00 or without it
+    if (cleanedAmount.endsWith('.00')) {
+      cleanedAmount = cleanedAmount.slice(0, -3); // Remove the .00 for valid input
+    }
+
+    // Check if the cleaned amount is a valid number
+    if (!isNaN(cleanedAmount)) {
+      // Limit the input to 12 digits
+      if (cleanedAmount.length <= 12) {
+        setAmount(cleanedAmount);
+        setUserEnteredAmount(cleanedAmount);
+      } else {
+        // Allow input after 12 digits
+        setAmount(cleanedAmount.substring(0, 12)); // Limit to 12 digits
+        setUserEnteredAmount(cleanedAmount.substring(0, 12));
+      }
+    } else {
+      // Handle non-numeric input
+      setAmount('0');
+      setUserEnteredAmount('0');
+      // setRate('0');
+      // setFees('0');
+      setCalculatedAmount('0');
+    }
+  };
+  const handleAmountBlur = (event) => {
+    let value = event.target.value;
+
+    // Remove any non-numeric characters (except for decimal points)
+    value = value.replace(/[^0-9.]/g, '');
+
+    // Check if the value is a valid number
+    if (!isNaN(value) && value !== '') {
+      // Convert to float
+      const numericValue = parseFloat(value);
+
+      // Only format if the value is greater than 0
+      if (numericValue > 0) {
+        const formattedValue = numericValue.toFixed(2);
+        setAmount(formattedValue); // Update the state
+        setUserEnteredAmount(formattedValue); // Update user entered amount
+        event.target.value = formattedValue; // Ensure input reflects formatted value
+      } else {
+        // If the value is 0 or empty, reset to an empty string
+        setAmount('0');
+        setUserEnteredAmount('0');
+        event.target.value = '0';
+      }
+    } else {
+      // If not a valid number, reset to an empty string
+      setAmount('0');
+      setUserEnteredAmount('0');
+      event.target.value = '0';
+    }
+  };
+
+  const handleInputFocusOut = () => {
+    setMinimumFractionDigits(2);
+  };
+
+  const handleInputFocus = () => {
+    // Set minimumFractionDigits to 0 when focus is in
+    setMinimumFractionDigits(0);
+  };
+
+  const handleContinue = (event) => {
+    event.preventDefault();
+    if (!selectedCollectionType || !selectedDeliveryType || !amount) {
+      toast.error("Please Fill All The Details.");
+      return;
+    }
+    toast.success('Amount Calculated Successfully!');
+    // Open the link in a new tab
+    window.open('https://moneygogointernational.com/app/app-login.html', '_blank');
+  };
+
+  // Fetch countries on component mount
+  useEffect(() => {
+    axios
+      .post(`${ApiConfig.baseUrl}/checkrateslistcountry/basecurrencylist`, {
+        clientID: "1",
+        branchID: selectedBranchId,
+      })
       .then((response) => {
         if (response?.data?.response && response?.data?.data) {
-          setBasecurencydata(response.data.data);
+          setBaseCurrencyData(response.data.data);
           const defaultCollectionType = response?.data?.data[0];
           if (defaultCollectionType) {
             setbasecurrencyId(defaultCollectionType?.baseCurrencyID.toString());
-            setcountryId(defaultCollectionType?.countryID.toString());
+
+            setBaseCurrencyCode(defaultCollectionType?.countryCurrency);
           }
         }
       })
-      .catch((error) => console.error('Error fetching payment types:', error));
+      .catch((error) =>
+        console.error("Error fetching payment types:", error)
+      );
   }, [selectedBranchId]);
+  const handleBasecountryIdChange = (event) => {
+    const selectedId = event.target.value;
+    const selectedCurrency = baseCurrencyData.find(
+      (item) => item.baseCurrencyID.toString() === selectedId
+    );
 
-  // Fetch countries on component mount
+    if (selectedCurrency) {
+      setBaseCurrencyId(selectedId); // Update selected baseCurrencyID
+      setBaseCurrencyCode(selectedCurrency.countryCurrency); // Update the displayed currency code
+
+
+    }
+  };
+
   useEffect(() => {
     axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/checklistcountry`, {
       clientID: '1'
@@ -154,7 +318,7 @@ function Calculator() {
       clientID: '1',
       branchID: selectedBranchId,
       customerID: "",
-      baseCountryID: countryId,
+      baseCountryID: BasecurrencyId,
       isApp: "0"
     })
       .then((response) => {
@@ -168,7 +332,7 @@ function Calculator() {
         }
       })
       .catch((error) => console.error('Error fetching payment types:', error));
-  }, [selectedBranchId, countryId]);
+  }, [selectedBranchId, BasecurrencyId]);
 
   useEffect(() => {
     if (amount && selectedCountry && currencyCode) {
@@ -180,13 +344,14 @@ function Calculator() {
         axios.post(`${ApiConfig.baseUrl}/checkrateslistcountry/checkrateslistcountry`, {
           clientID: '1',
           countryID: selectedCountry,
-          paymentTypeID: payementtypeId,
+          paymentTypeID: "2",
           paymentDepositTypeID: selectedCollectionType,
           deliveryTypeID: selectedDeliveryType,
           transferAmount: amount,
           currencyCode: currencyCode,
           branchID: selectedBranchId,
-          BaseCurrencyID: BasecurrencyId
+          BaseCurrencyID: baseCurrencyId || "22",
+          baseCurrencyCode: baseCurrencyCode
         })
           .then((response) => {
             if (response.data.response && response.data.data && response.data.data.length > 0) {
@@ -207,158 +372,23 @@ function Calculator() {
                 setRate('0');
                 setAmount('0');
                 setCalculatedAmount('0');
+                setRecipentGetInput(false);
               }
             } else {
               toast.error("Rates And Fees Are Not Available For This Country");
               setRate('0');
               setAmount('0');
               setCalculatedAmount('0');
+              setyouSendInput(false);
+              setUserEnteredAmount('0');
             }
           })
           .catch((error) => console.error('Error fetching rates and fees:', error))
           .finally(() => setIsLoading(false));
       }, 1000);
     }
-  }, [amount, selectedCountry, currencyCode, selectedCollectionType, BasecurrencyId, payementtypeId, selectedDeliveryType, selectedBranchId, selectBasecountryId]);
+  }, [amount, selectedCountry, currencyCode, selectedCollectionType, baseCurrencyCode, baseCurrencyId, payementtypeId, selectedDeliveryType, selectedBranchId, selectBasecountryId,]);
 
-  const handleBasecountryIdChange = (event) => {
-    const newBasecountryId = event.target.value;
-    setselectBasecountryId(newBasecountryId);
-    setBaseCountryFlag(baseCountryFlags[newBasecountryId]);
-  };
-
-  const handleDeliveryTypeChange = (event) => {
-    event.preventDefault();
-    const selectedDeliveryType = event.target.value;
-    setSelectedDeliveryType(selectedDeliveryType);
-  };
-
-  const handleCollectionTypeChange = (event) => {
-    event.preventDefault();
-    const selectedCollectionType = event.target.value;
-    setSelectedCollectionType(selectedCollectionType);
-  };
-
-  const handlePayementTypeChange = (event) => {
-    event.preventDefault();
-    const selectedPaymentType = event.target.value;
-    setpaymenttypeId(selectedPaymentType);
-  };
-
-
-  const handleCountryChange = (event) => {
-    const newCountryId = event.target.value;
-    setSelectedCountry(newCountryId);
-    const newCountryDetails = countries.find(country => country.countryID.toString() === newCountryId);
-    setSelectedCountryDetails(newCountryDetails);
-    if (newCountryDetails) {
-      setCurrencyCode(newCountryDetails.countryCurrency);
-    }
-  };
-
-  const handleAmountChange = (event) => {
-    event.preventDefault();
-    const newAmount = event.target.value;
-    setyouSendInput(true);
-
-    // Remove leading zeros
-    let cleanedAmount = newAmount.replace(/^0+/, '');
-
-    // Allow typing with .00 or without it
-    if (cleanedAmount.endsWith('.00')) {
-        cleanedAmount = cleanedAmount.slice(0, -3); // Remove the .00 for valid input
-    }
-
-    // Check if the cleaned amount is a valid number
-    if (!isNaN(cleanedAmount)) {
-        // Limit the input to 12 digits
-        if (cleanedAmount.length <= 12) {
-            setAmount(cleanedAmount);
-            setUserEnteredAmount(cleanedAmount);
-        } else {
-            // Allow input after 12 digits
-            setAmount(cleanedAmount.substring(0, 12)); // Limit to 12 digits
-            setUserEnteredAmount(cleanedAmount.substring(0, 12));
-        }
-    } else {
-        // Handle non-numeric input
-        setAmount('0');
-        setUserEnteredAmount('0');
-        // setRate('0');
-        // setFees('0');
-        setCalculatedAmount('0');
-    }
-};
-
-  const handleCalculatedAmountChange = (event) => {
-    event.preventDefault();
-    let newCalculatedAmount = event.target.value;
-    setRecipentGetInput(true);
-    // Remove any non-numeric characters from the input
-    newCalculatedAmount = newCalculatedAmount.replace(/[^0-9.]/g, '');
-
-    // Ensure the input does not exceed 7 digits
-    if (newCalculatedAmount.length > 12) {
-      newCalculatedAmount = newCalculatedAmount.slice(0, 0);
-    }
-
-    // Update the state with the cleaned amount
-    setCalculatedAmount(newCalculatedAmount);
-    setUserEnteredAmount(newCalculatedAmount / rate || '');
-    setAmount(newCalculatedAmount / rate || '');
-  };
-
-
-  const handleAmountBlur = (event) => {
-    let value = event.target.value;
-  
-    // Remove any non-numeric characters (except for decimal points)
-    value = value.replace(/[^0-9.]/g, '');
-  
-    // Check if the value is a valid number
-    if (!isNaN(value) && value !== '') {
-      // Convert to float
-      const numericValue = parseFloat(value);
-  
-      // Only format if the value is greater than 0
-      if (numericValue > 0) {
-        const formattedValue = numericValue.toFixed(2);
-        setAmount(formattedValue); // Update the state
-        setUserEnteredAmount(formattedValue); // Update user entered amount
-        event.target.value = formattedValue; // Ensure input reflects formatted value
-      } else {
-        // If the value is 0 or empty, reset to an empty string
-        setAmount('0');
-        setUserEnteredAmount('0');
-        event.target.value = '0';
-      }
-    } else {
-      // If not a valid number, reset to an empty string
-      setAmount('0');
-      setUserEnteredAmount('0');
-      event.target.value = '0';
-    }
-  };
-  
-    const handleInputFocusOut = () => {
-      setMinimumFractionDigits(2);
-    };
-  
-    const handleInputFocus = () => {
-      // Set minimumFractionDigits to 0 when focus is in
-      setMinimumFractionDigits(0);
-    };
-
-  const handleContinue = (event) => {
-    event.preventDefault();
-    if (!selectedCollectionType || !selectedDeliveryType || !amount) {
-      toast.error("Please Fill All The Details.");
-      return;
-    }
-    toast.success('Amount Calculated Successfully!');
-    // Open the link in a new tab
-    window.open('https://eremitly.com/app/app-login.html', '_blank');
-  };
 
   return (
     <>
@@ -397,8 +427,36 @@ function Calculator() {
                     maxLength={12} // Limiting input to 12 characters
                     placeholder='0.00'
                   />
-                  <img className="baseflag" src={baseCountryFlag} alt="GBP flag" />
-                  <span className="inputgbp">GBP</span>
+                    <div className="currency-selector">
+                    {/* Display selected flag with fallback */}
+                    <img
+                      className="flagicon baseflag mt-0"
+                      src={
+                        // baseCurrencyData.find(
+                        //   (currency) => currency.baseCurrencyID.toString() === baseCurrencyId
+                        // )?.flag ||
+                        baseCurrencyData.find(
+                          (currency) => currency.baseCurrencyID.toString() === baseCurrencyId
+                        )?.countryFlag ||
+                        "images/flags/gbp.png" // Hardcoded fallback image path
+                      }
+                      alt="Selected Country Flag"
+                      style={{ marginRight: "10px", verticalAlign: "middle" }}
+                    />
+
+                    {/* Dropdown for currency selection */}
+                    <select
+                      className="inputgbp"
+                      value={baseCurrencyId}
+                      onChange={handleBasecountryIdChange}
+                    >
+                      {baseCurrencyData.map((currency) => (
+                        <option key={currency.baseCurrencyID} value={currency.baseCurrencyID}>
+                          {`${currency.countryCurrency}`}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12 col-md-12">
@@ -409,7 +467,7 @@ function Calculator() {
                       <strong id="txtTransferFee" className="txtTransferFee">£{`${fees}`}</strong>
                     </div>
                     <div className="info-right">
-                      <span className='text-white'>Transfer Fee</span>
+                      <span className=''>Transfer Fee</span>
                     </div>
                   </li>
                   <li className="d-flex justify-content-between align-items-center">
@@ -418,7 +476,7 @@ function Calculator() {
                       <strong className="txtExchangeRates">{rate} {currencyCode}</strong>
                     </div>
                     <div className="info-right">
-                      <span className='text-white'>Guaranted Rate</span>
+                      <span className=''>Guaranted Rate</span>
                     </div>
                   </li>
                 </ul>
