@@ -71,7 +71,7 @@ function Footer() {
                                             </NavLink>
                                         </div>
                                         <p className="about-text">
-                                       Le-Zemed Limited, registered with Companies House under company number 15867016, is authorized.
+                                       Le-Zemed Limited, registered with Companies House under company number 16193962, is authorized.
                                             {/*Le-Zemed Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
                                         </p>
                                         <div className="th-social">
@@ -88,8 +88,8 @@ function Footer() {
                                     <h3 className="widget_title">Quick Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/contact">Contact Us</NavLink></li>
-                                            <li><NavLink to="/help">Help</NavLink></li>
+                                            <li><NavLink to="/">Contact Us</NavLink></li>
+                                            <li><NavLink to="/">Help</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -99,9 +99,9 @@ function Footer() {
                                     <h3 className="widget_title">Legals Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/terms-and-conditions">Terms and Conditions</NavLink></li>
-                                            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
-                                            <li><NavLink to="/complaint-policy">Complaint Policy</NavLink></li>
+                                            <li><NavLink to="/">Terms and Conditions</NavLink></li>
+                                            <li><NavLink to="/">Privacy Policy</NavLink></li>
+                                            <li><NavLink to="/">Complaint Policy</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -112,18 +112,18 @@ function Footer() {
                                     <div className="th-widget-contact">
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/location.svg" /></div>
-                                            <p className="box-text">12 Old Bond Street, London, England, W1S 4PW</p>
+                                            <p className="box-text">London</p>
                                         </div>
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/mail.svg" /></div>
                                             <p className="box-text">
-                                                <NavLink to="mailto:info@eremitly.com" className="box-link">info@eremitly.com</NavLink>
+                                                <NavLink to="mailto:aabileh@hotmail.com" className="box-link">aabileh@hotmail.com</NavLink>
                                             </p>
                                         </div>
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/call.svg" /></div>
                                             <p className="box-text">
-                                                <NavLink to="tel:447446228131" className="box-link">+44 7446 228131</NavLink>
+                                                <NavLink to="tel:447878210109" className="box-link">+44 7878 210109</NavLink>
                                             </p>
                                         </div>
                                     </div>
@@ -136,8 +136,7 @@ function Footer() {
                 <div className="copyright-wrap text-center">
                     <div className="container">
                         <p className="copyright-text">
-                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script>
-                            <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved.
+                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">Le-Zemed </NavLink> All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
                             {/* <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
                         </p>
                     </div>

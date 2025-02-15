@@ -45,16 +45,16 @@ function Header() {
                     <div className="th-mobile-menu">
                         <ul>
                             <li>
-                                <NavLink to="/money-transfer">Money Transfer</NavLink>
+                                <NavLink to="/">Money Transfer</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about-us">About Us</NavLink>
+                                <NavLink to="/">About Us</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/help">Help</NavLink>
+                                <NavLink to="/">Help</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">Contact Us</NavLink>
+                                <NavLink to="/">Contact Us</NavLink>
                             </li>
                         </ul>
 
@@ -81,16 +81,16 @@ function Header() {
                                     <nav className="main-menu style2 d-none d-lg-inline-block">
                                         <ul>
                                             <li>
-                                                <NavLink to="/money-transfer">Money Transfer</NavLink>
+                                                <NavLink to="/">Money Transfer</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/about-us">About Us</NavLink>
+                                                <NavLink to="/">About Us</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/help">Help</NavLink>
+                                                <NavLink to="/">Help</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/contact">Contact Us</NavLink>
+                                                <NavLink to="/">Contact Us</NavLink>
                                             </li>
                                         </ul>
                                     </nav>
