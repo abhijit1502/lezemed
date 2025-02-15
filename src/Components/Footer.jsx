@@ -112,7 +112,8 @@ function Footer() {
                                     <div className="th-widget-contact">
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/location.svg" /></div>
-                                            <p className="box-text">London</p>
+                                            <p className="box-text">84b High Street, Southall, England, UB1 3DB
+                                            </p>
                                         </div>
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/mail.svg" /></div>
