@@ -88,8 +88,8 @@ function Footer() {
                                     <h3 className="widget_title">Quick Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/contact">Contact Us</NavLink></li>
-                                            <li><NavLink to="/help">Help</NavLink></li>
+                                            <li><NavLink to="/">Contact Us</NavLink></li>
+                                            <li><NavLink to="/">Help</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -99,9 +99,9 @@ function Footer() {
                                     <h3 className="widget_title">Legals Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
-                                            <li><NavLink to="/terms-and-conditions">Terms and Conditions</NavLink></li>
-                                            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
-                                            <li><NavLink to="/complaint-policy">Complaint Policy</NavLink></li>
+                                            <li><NavLink to="/">Terms and Conditions</NavLink></li>
+                                            <li><NavLink to="/">Privacy Policy</NavLink></li>
+                                            <li><NavLink to="/">Complaint Policy</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
