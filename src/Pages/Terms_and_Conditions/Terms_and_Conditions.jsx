@@ -20,7 +20,7 @@ function Terms_and_Conditions() {
                 <Preloader />
             ) : (
                 <div>
-                    <Terms_and_Conditions_Seo/>
+                    <Terms_and_Conditions_Seo />
                     <Header />
                     <div className="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg" style={{ backgroundImage: 'url(assets/img/bg/breadcumb-bg.jpg)' }}>
                         <div className="container">
@@ -33,7 +33,7 @@ function Terms_and_Conditions() {
                             </div>
                         </div>
                     </div>
-                   
+
                     <div className="th-blog-wrapper blog-details space-top space-extra-bottom legal-page">
                         <div className="container">
                             <div className="row">
@@ -43,8 +43,13 @@ function Terms_and_Conditions() {
                                             <h4>
                                                 <span>I.</span> General Provisions
                                             </h4>
-                                            <p className='mb-2'>These Terms and Conditions govern the terms under which you may access and use our website ("the Website") the services associated with it (together, the "Service"). By accessing, registering with and using the Service, you agree to be bound by the terms of the Terms and Conditions.</p>
-                                            <p>In the present Terms and Conditions, the terms "we", "us", "our" refer to eRemitly and "you", "your" refer to any person who accesses and/or uses the Service. It is important that you understand that access and use of the Service is conditional on your acceptance of present Terms and Conditions. The language of these Terms and Conditions is English and all Services, instructions and transactions carried out in connection with it shall be in English.</p>
+                                            <p className='mb-2'>
+                                                These Terms and Conditions govern the terms under which you may access and use our website ("the Website") and the services associated with it (together, the "Service"). By accessing, registering with, and using the Service, you agree to be bound by these Terms and Conditions.
+                                            </p>
+                                            <p>
+                                                In these Terms and Conditions, "we," "us," and "our" refer to Salama Remit, while "you" and "your" refer to any person who accesses and/or uses the Service. Access to and use of the Service is conditional upon your acceptance of these Terms and Conditions.
+                                                The language of these Terms and Conditions is English, and all Services, instructions, and transactions carried out in connection with it shall be conducted in English.
+                                            </p>
                                         </div>
 
                                         <div className="blog-content">
@@ -52,27 +57,51 @@ function Terms_and_Conditions() {
                                             <p className='mb-2'>In this Terms and Conditions the terms below shall have the following definition(s): </p>
                                             <ul class="info-number-list">
                                                 <li>
-                                                    <span>A.</span>"Compliance Officer" means one or more members of staff at eRemitly. who is responsible for compliance with Money Transfer Regulations, anti-money laundering legislation and other applicable laws;</li>
+                                                    <span>A.</span> "Compliance Officer" means one or more members of staff at Salama Remit who are responsible for compliance with Money Transfer Regulations, anti-money laundering legislation, and other applicable laws.
+                                                </li>
                                                 <li>
-                                                    <span>B.</span>"Fees" means the charges and fees we charge to you for the Service, as applicable, in accordance with the price list published on the Website and/or the Application, or the prices or rates that we communicate to you before we issue a Confirmation, or as provided in these Terms and Conditions;</li>
+                                                    <span>B.</span> "Fees" means the charges and fees we apply for the Service, as specified in the price list published on the Website and/or the Application, or as communicated to you before we issue a Confirmation, in accordance with these Terms and Conditions.
+                                                </li>
                                                 <li>
-                                                    <span>C.</span>"Force Majeure Event" means any of the circumstances referred to in clause VII.G;</li>
+                                                    <span>C.</span>"Force Majeure Event" means any of the circumstances referred to in clause VII.G;
+                                                </li>
                                                 <li>
-                                                    <span>D.</span>"FX Spread" is where you pay for a transaction in one currency and it is paid out in another currency, we apply an FX spread. The FX spread is the difference between the exchange rate we buy the currency in and the exchange rate we are able to provide to you and we communicated it in the order confirmation and it covers our costs plus a small margin.</li>
+                                                    <span>D.</span> "FX Spread" means when you pay for a transaction in one currency, and it is paid out in another currency. We apply an FX spread, which is the difference between the exchange rate at which we buy the currency and the exchange rate we offer you. This spread is communicated in the order confirmation and covers our costs plus a small margin.
+                                                </li>
                                                 <li>
-                                                    <span>E.</span>"Malicious Code" means computer viruses, Trojans, software locks, drop-dead devices, malicious logic or trap door, worms, time bombs, corrupted files or other computer programme routines that are intended to delete, disable, deactivate, damage, detrimentally interfere with, surreptitiously intercept or expropriate any systems, data, personal information or property of another;</li>
+                                                    <span>E.</span> "Malicious Code" means computer viruses, Trojans, software locks, drop-dead devices, malicious logic, trap doors, worms, time bombs, corrupted files, or other computer program routines intended to delete, disable, deactivate, damage, interfere with, intercept, or expropriate any systems, data, personal information, or property of another.
+                                                </li>
                                                 <li>
-                                                    <span>F.</span>"Money Transfer Regulations" means the applicable laws of the United Kingdom or of the country from which funds are transferred or where funds are intended to be received which relate to electronic money transfer services including, without limitation, the Financial Services and Markets Act 2000/2016, the Payment Services Regulations 2017 and the Electronic Money Regulations 2011;</li>
+                                                    <span>F.</span> "Money Transfer Regulations" means the applicable laws of the United Kingdom or any other relevant jurisdiction regulating electronic money transfer services, including but not limited to:
+                                                    <ul class="info-number-list">
+                                                        <li> <span>a.</span> The Financial Services and Markets Act 2000/2016</li>
+                                                        <li> <span>b.</span> The Payment Services Regulations 2017, and</li>
+                                                        <li> <span>c.</span> The Electronic Money Regulations 2011</li>
+                                                    </ul>
+                                                </li>
                                                 <li>
-                                                    <span>G.</span>"Prohibited purpose" means any unlawful purpose (whether such illegality arises in the country from which the funds are transferred or where they are intended to be received or in any territory with jurisdiction over the Sender or the Receiver) including, without limitation, the transfer or receipt of payment for illegal activities, the transfer of funds which constitute proceeds of crime or money laundering under the Proceeds of Crime Act 2002 or which are obtained by illegal activity, the transfer of funds for the purpose of funding illegal activity, the transfer of funds for the purpose of avoiding the seizure of such funds by law enforcement authorities or under orders of any court of law, and any transfer of funds without the permission of their owner;</li>
+                                                    <span>G.</span> "Prohibited Purpose" means any unlawful purpose, whether in the country from which the funds are transferred, the recipient's country, or any jurisdiction with authority over the Sender or Receiver. This includes but is not limited to:
+                                                    <ul class="info-number-list">
+                                                        <li> <span>a.</span> The transfer or receipt of payments for illegal activities,</li>
+                                                        <li> <span>b.</span> The transfer of funds that constitute proceeds of crime or money laundering under the Proceeds of Crime Act 2002</li>
+                                                        <li> <span>c.</span> The use of funds obtained through illegal activity,</li>
+                                                        <li> <span>d.</span> Funding illegal activity,</li>
+                                                        <li> <span>e.</span> The transfer of funds to evade seizure by law enforcement authorities or court orders, and</li>
+                                                        <li> <span>f.</span> The transfer of funds without the owner's permission.</li>
+                                                    </ul>
+                                                </li>
                                                 <li>
-                                                    <span>H.</span>"Recipient" means the person who receives the money through the Service,</li>
+                                                    <span>H.</span>"Recipient" means the person who receives the money through the Service.
+                                                </li>
                                                 <li>
-                                                    <span>I.</span>"Reference number" means the unique transaction number, which will be issued to you as and which the recipient will be required to provide to our partners in order to receive the amount transferred,</li>
+                                                    <span>I.</span> "Reference Number" means the unique transaction number issued to you, which the recipient must provide to our partners to receive the transferred funds.
+                                                </li>
                                                 <li>
-                                                    <span>J.</span>"Sender" means the person who initiates the carrying out of a money transfer through the Service,</li>
+                                                    <span>J.</span> "Sender" means the person who initiates a money transfer through the Service.
+                                                </li>
                                                 <li>
-                                                    <span>K.</span>"Transaction" means every money transfer that you initiate using the Service and/or every other use that you make of the Service,</li>
+                                                    <span>K.</span> "Transaction" means every money transfer you initiate using the Service and/or any other use of the Service you make.
+                                                </li>
                                             </ul>
                                         </div>
 
@@ -80,27 +109,35 @@ function Terms_and_Conditions() {
                                             <h4><span>III.</span> Eligibility and access rights</h4>
                                             <ul class="info-number-list">
                                                 <li>
-                                                    <span>A.</span>By using the Service you warrant that you are at least 18 years old and that you have a legal capacity to enter into legally binding contracts.
+                                                    <span>A.</span> By using the Service, you warrant that you are at least 18 years old and have the legal capacity to enter into legally binding contracts.
                                                 </li>
                                                 <li>
-                                                    <span>B.</span>Without prejudice to your rights in relation to any order for Services in relation to which we issued a Confirmation (in accordance with clause V below), we reserve the right, at any time, to terminate or suspend your access to the Service without prior notice if:
+                                                    <span>B.</span> Without prejudice to your rights regarding any order for Services for which we have issued a Confirmation (in accordance with Clause V below), we reserve the right to terminate or suspend your access to the Service at any time, without prior notice, if:
                                                     <ul class="info-number-list mt-3">
                                                         <li>
-                                                            <span>a.</span>You use the Service or attempt to use it for any Prohibited Purpose;</li>
+                                                            <span>a.</span> You use the Service or attempt to use it for any Prohibited Purpose;
+                                                        </li>
                                                         <li>
-                                                            <span>b.</span>You attempt to transfer or charge funds from an account that does not belong to you;</li>
+                                                            <span>b.</span> You attempt to transfer or charge funds from an account that does not belong to you;
+                                                        </li>
                                                         <li>
-                                                            <span>c.</span>We receive conflicting claims regarding ownership of or the right to withdraw funds from a debit or credit card account;</li>
+                                                            <span>c.</span> We receive conflicting claims regarding ownership of or the right to withdraw funds from a debit or credit card account;
+                                                        </li>
                                                         <li>
-                                                            <span>d.</span>You have provided us with false evidence of your identity or you keep failing in providing us with true, accurate, current and complete evidence of your identity or details regarding transactions;</li>
+                                                            <span>d.</span>You have provided false evidence of your identity or have repeatedly failed to provide true, accurate, current, and complete identity verification or transaction details;
+                                                        </li>
                                                         <li>
-                                                            <span>e.</span>You attempt to tamper, hack, modify, overload, or otherwise corrupt or circumvent the security and/or functionality of the Website and/or the Application or to infect it with any Malicious Code;</li>
+                                                            <span>e.</span>You attempt to tamper with, hack, modify, overload, corrupt, or otherwise circumvent the security or functionality of the Website and/or Application, or introduce any Malicious Code;
+                                                        </li>
                                                         <li>
-                                                            <span>f.</span>You are in breach of these Terms and Conditions;</li>
+                                                            <span>f.</span>You are in breach of these Terms and Conditions;
+                                                        </li>
                                                         <li>
-                                                            <span>g.</span>We have reason to believe that any of the foregoing has occurred or is likely to occur; or</li>
+                                                            <span>g.</span>We have reason to believe that any of the foregoing has occurred or is likely to occur; or
+                                                        </li>
                                                         <li>
-                                                            <span>h.</span>A Compliance Officer has taken a discretionary decision to do so.</li>
+                                                            <span>h.</span>A Compliance Officer has exercised discretion to terminate or suspend your access.
+                                                        </li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -110,75 +147,96 @@ function Terms_and_Conditions() {
                                             <h4><span>IV.</span> How the contract is formed between you and us</h4>
                                             <ul class="info-number-list">
                                                 <li>
-                                                    <span>A.</span>After you place a money transfer order via the Website or the Application an e-mail will be sent to you acknowledging that your order has been received. Please note that this does not mean that your order is accepted.</li>
+                                                    <span>A.</span>After you place a money transfer order via the Website or the Application, an email will be sent to you acknowledging that your order has been received. Please note that this does not mean that your order has been accepted.
+                                                </li>
                                                 <li>
-                                                    <span>B.</span>A transaction order constitutes solely an offer to buy our services, which is subject to our discretionary acceptance. Such acceptance will be communicated to you via e-mail confirming that we are processing your request (hereinafter called "the Confirmation"). The contract between you and us (hereinafter called "the Contract") will only be formed when the Confirmation has been sent.</li>
+                                                    <span>B.</span>A transaction order constitutes solely an offer to purchase our services, which is subject to our discretionary acceptance. Such acceptance will be communicated to you via email confirming that we are processing your request (hereinafter referred to as "the Confirmation"). The contract between you and us (hereinafter referred to as "the Contract") will only be formed when the Confirmation has been sent.
+                                                </li>
                                                 <li>
-                                                    <span>C.</span>The Contract relates solely to the services that have been confirmed accepted in the Confirmation.</li>
+                                                    <span>C.</span>The Contract relates solely to the services that have been confirmed in the Confirmation.
+                                                </li>
                                                 <li>
                                                     <span>D.</span>We reserve the right to refuse to perform any of the Services (including after Confirmation) if:
                                                     <ul class="info-number-list mt-3">
                                                         <li>
-                                                            <span>a.</span>We are unable to obtain satisfactory evidence of your identity;</li>
+                                                            <span>a.</span>We are unable to obtain satisfactory evidence of your identity
+                                                        </li>
                                                         <li>
-                                                            <span>b.</span>You provide us with false, incorrect or incomplete information;</li>
+                                                            <span>b.</span>You provide false, incorrect, or incomplete information
+                                                        </li>
                                                         <li>
-                                                            <span>c.</span>We are unable to reach you via contact details provided by you;</li>
+                                                            <span>c.</span>We are unable to reach you via the contact details provided by you
+                                                        </li>
                                                         <li>
-                                                            <span>d.</span>Your transfer order, information or documentation is not provided sufficiently in advance to allow us to process it in accordance to your request;</li>
+                                                            <span>d.</span>Your transfer order, information, or documentation is not provided sufficiently in advance to allow us to process it in accordance with your request
+                                                        </li>
                                                         <li>
-                                                            <span>e.</span>You attempt to tamper, hack, modify, overload, or otherwise corrupt or circumvent the security and/or functionality of the Website and/or the Application or to infect it with any Malicious Code;</li>
+                                                            <span>e.</span>You attempt to tamper with, hack, modify, overload, corrupt, or otherwise circumvent the security or functionality of the Website and/or the Application, or introduce any Malicious Code
+                                                        </li>
                                                         <li>
-                                                            <span>f.</span>You are in breach of these Terms and Conditions;</li>
+                                                            <span>f.</span>You are in breach of these Terms and Conditions
+                                                        </li>
                                                         <li>
-                                                            <span>g.</span>You or the order you placed are in breach of any applicable laws or regulations or are made for a Prohibited Purpose;</li>
+                                                            <span>g.</span>You or the order you placed are in breach of any applicable laws or regulations or are made for a Prohibited Purpose
+                                                        </li>
                                                         <li>
-                                                            <span>h.</span>Processing the Service in accordance with your order may expose us to liability;</li>
+                                                            <span>h.</span>Processing the Service in accordance with your order may expose us to liability
+                                                        </li>
                                                         <li>
-                                                            <span>i.</span>We are unable to process your transfer due to variations in business hours, currency exchange or currency availability issues or due to any Force Majeure Event;</li>
+                                                            <span>i.</span>We are unable to process your transfer due to variations in business hours, currency exchange, or currency availability issues, or due to any Force Majeure Event
+                                                        </li>
                                                         <li>
-                                                            <span>j.</span>We have reason to believe that any of the foregoing has occurred or is likely to occur; or</li>
+                                                            <span>j.</span>We have reason to believe that any of the foregoing has occurred or is likely to occur; or
+                                                        </li>
                                                         <li>
-                                                            <span>k.</span>A Compliance Officer has taken a discretionary decision to do so.</li>
+                                                            <span>k.</span>A Compliance Officer has exercised discretion to do so.
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span>E.</span>We shall not be liable for any damages, costs or losses incurred by the Sender or the Recipient or any third party if, as a result of any of the circumstances referred to in clause III.B or VI.D, we fail to complete the transfer of funds in accordance with an order.</li>
+                                                    <span>E.</span>We shall not be liable for any damages, costs, or losses incurred by the Sender, the Recipient, or any third party if, as a result of any of the circumstances referred to in Clause III.B or VI.D, we fail to complete the transfer of funds in accordance with an order.
+                                                </li>
                                             </ul>
                                         </div>
 
                                         <div className="blog-content">
                                             <h4><span>V.</span> Information provided after we process a transaction</h4>
-                                            <p>After we process your transaction to the Recipient an e-mail will be sent to you with the following information:</p>
+
+                                            <p>After we process your transaction to the Recipient, an email will be sent to you containing the following information:</p>
                                             <ul class="info-number-list mt-3">
                                                 <li>
-                                                    <span>A.</span>A transaction reference number,</li>
+                                                    <span>A.</span>A transaction reference number.
+                                                </li>
                                                 <li>
-                                                    <span>B.</span>A confirmation of the exact amount we are sending to the Recipient on your behalf in both pay in and pay out currencies,</li>
+                                                    <span>B.</span>A confirmation of the exact amount sent to the Recipient on your behalf, in both the pay-in and pay-out currencies.
+                                                </li>
                                                 <li>
-                                                    <span>C.</span>A confirmation of the Fee that has been charged,</li>
+                                                    <span>C.</span>A confirmation of the fee charged.
+                                                </li>
                                                 <li>
-                                                    <span>D.</span>An exchange rate applied to your transaction,</li>
+                                                    <span>D.</span>The exchange rate applied to your transaction.
+                                                </li>
                                                 <li>
-                                                    <span>E.</span>A confirmation of the bank to which the money has been sent (for credit to bank option),</li>
+                                                    <span>E.</span>A confirmation of the bank to which the money has been sent (for bank credit option).
+                                                </li>
                                             </ul>
                                         </div>
 
                                         <div className="blog-content">
                                             <h4><span>VI.</span> Confidentiality/ privacy</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>As a fully regulated institution and with a purpose of providing the Service we are bound by the legal requirements to obtain, verify and record information about our customers. Therefore we may request from you or consult any legal sources to obtain your personal data when offering the Service to you.</li>
-                                                <li><span>B.</span>Your personal information will be treated and processed securely and strictly in accordance with applicable laws and regulations.</li>
-                                                <li><span>C.</span>We will not treat customer information as confidential where it is already public knowledge or where it becomes public knowledge through no fault of our own.</li>
-                                                <li><span>D.</span>We may disclose customer information if we are required to do so by law, by court order, by any statutory, legal or regulatory requirement, by the police or any other competent authorities in connection with the prevention or detection of crime or to help combat fraud, money laundering and terrorism financing. We may also report suspicious activity to appropriate competent law enforcement or government authorities.</li>
-                                                <li><span>E.</span>For more details and information regarding the confidentiality, privacy and security please refer to our Privacy Policy.</li>
+                                                <li><span>A.</span>As a fully regulated institution, we are legally required to obtain, verify, and record information about our customers to provide the Service. Therefore, we may request information from you or consult legal sources to obtain your personal data when offering the Service.</li>
+                                                <li><span>B.</span>Your personal information will be processed securely and strictly in accordance with applicable laws and regulations.</li>
+                                                <li><span>C.</span>Customer information will not be treated as confidential if it is already public knowledge or becomes public knowledge through no fault of our own.</li>
+                                                <li><span>D.</span>We may disclose customer information if required by law, court order, statutory or regulatory requirements, or upon request by the police or other competent authorities for the prevention or detection of crime, fraud, money laundering, or terrorism financing. We may also report suspicious activity to the relevant law enforcement or government authorities</li>
+                                                <li><span>E.</span>For more details on confidentiality, privacy, and security, please refer to our Privacy Policy.</li>
                                             </ul>
                                         </div>
 
                                         <div className="blog-content">
                                             <h4><span>VII.</span> Limitations of liability</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have a right to receive a refund less applicable fees or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink> for more information regarding refunds and compensations.</li>
+                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have the right to receive a refund, less applicable fees, or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink> for more information regarding refunds and compensation.</li>
                                                 <li><span>B.</span>Claims for refund or compensation must be supported by all available evidence.</li>
                                                 <li><span>C.</span>If a money transfer in accordance with an order you made and that we Confirmed is delayed or fails and you are not entitled to a refund or compensation under the Money Transfer Regulations, we expressly limit our liability in respect of any such delayed or failed transfer (including for any claimed refund) to the greater of: (a) the amount of any service charge that was paid to us; and (b) €600. The foregoing cap on our liability applies to any single transaction, act, omission or event and to any number of related transactions, acts, and omissions or events.</li>
                                                 <li><span>D.</span>Except as provided in clause 9.5, we shall not be liable to you or to any third party in relation to the Services, whether for breach of contract, tort (including negligence), misrepresentation, unjust enrichment or any other grounds, for any indirect, incidental, consequential or special damages including any loss of profits or savings or anticipated profits or savings, loss of data, loss of opportunity, loss or reputation, goodwill or business or any economic loss, even if we are advised in advance of the possibility of such loss.</li>
@@ -256,13 +314,13 @@ function Terms_and_Conditions() {
                                             <ul class="info-number-list">
                                                 <li><span>A.</span>
                                                     You have a right to cancel an order before payment has been made to the Recipient. You may exercise this right by:
-                                                        <ul class="info-number-list mt-3">
-                                                            <li><span>a.</span>Calling us on <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
-                                                            <li><span>b.</span>Emailing us at <NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink></li>
-                                                            <li><span>c.</span>If you exercise your right to cancel the order after you have already paid us the funds to be transferred:</li>
-                                                            <li><span>d.</span>we will refund money paid by you and intended for a Recipient only under the condition that it has not already been paid out to the Recipient in accordance with your original instructions prior to the cancellation request; and</li>
-                                                            <li><span>e.</span>we reserve the right to retain the Fees charged for the Service (and we may charge you with those Fees if they have not yet been paid); and</li>
-                                                        </ul>
+                                                    <ul class="info-number-list mt-3">
+                                                        <li><span>a.</span>Calling us on <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
+                                                        <li><span>b.</span>Emailing us at <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
+                                                        <li><span>c.</span>If you exercise your right to cancel the order after you have already paid us the funds to be transferred:</li>
+                                                        <li><span>d.</span>we will refund money paid by you and intended for a Recipient only under the condition that it has not already been paid out to the Recipient in accordance with your original instructions prior to the cancellation request; and</li>
+                                                        <li><span>e.</span>we reserve the right to retain the Fees charged for the Service (and we may charge you with those Fees if they have not yet been paid); and</li>
+                                                    </ul>
                                                 </li>
                                                 <li><span>B.</span>if by the time you notify us of the cancellation of the transfer we have already sent the money to one of our partners in the country of destination, we may not be able to successfully cancel the order, given that the cancellation procedures with our partners differ in length and complexity, as well as often require communication across time zones.</li>
                                                 <li><span>C.</span>Refunds can take up to 7 working days to be processed and this depends as well on the customer's bank processes, which are beyond our control.</li>
@@ -280,18 +338,25 @@ function Terms_and_Conditions() {
                                                     We value your feedback as it helps us improve our service. We have established internal procedures for complaints. You can make a complaint in writing to us regarding any aspect of the Service by mail or e-mail to the following addresses:
                                                     <ul class="info-number-list mt-3">
                                                         <li><span>a.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>b.</span><NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink></li>
+                                                        <li><span>b.</span><NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
                                                     </ul>
                                                 </li>
                                                 <li><span>B.</span>We will investigate your complaint and use reasonable endeavours to come back to you with the results of our investigation within 7 working days after receipt of your complaint.</li>
-                                                <li><span>C.</span>If you are still dissatisfied with the manner in which we have dealt with your complaint or the outcome of it, you have a right to refer your complaint to the Financial Ombudsman Service, South Quay Plaza, 183 Marsh Wall, London E14 9SR, Tel No <a href="tel:4408000234567">0800 0234 567 </a>, Email: <a href="mailto:complaint.info@financial-ombudsman.org.uk">complaint.info@financial-ombudsman.org.uk</a></li>
+                                                <li>
+                                                    <span>C.</span>If you are not satisfied with how we have handled your complaint or its outcome, you have the right to refer your complaint to the Financial Ombudsman Service at:
+                                                    <ul class="info-number-list mt-3">
+                                                        <li><span>•	Address:</span>South Quay Plaza, 183 Marsh Wall, London E14 9SR </li>
+                                                        <li><span>•	Telephone:</span><NavLink to="tel:4408000234567">0800 0234 567 </NavLink></li>
+                                                        <li><span>•	Email:</span><NavLink to='mailto:complaint.info@financial-ombudsman.org.uk'>complaint.info@financial-ombudsman.org.uk</NavLink></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </div>
 
                                         <div className="blog-content">
                                             <h4><span>XII.</span> Money transfer and the payment services regulations</h4>
                                             <p>The Payment Services Regulations 2017 (hereinafter called "the Regulations") govern the transfer of money to recipients within the European Economic Area (being all members states of the European Union, together with Norway, Iceland and Liechtenstein), where the transfer of funds is carried out in Euros, Sterling or the currency of another EEA state which has not adopted the Euro as its currency.</p>
-                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink> for more information.</p>
+                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink> for more information.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -301,7 +366,7 @@ function Terms_and_Conditions() {
 
                                         <div className="blog-content">
                                             <h4><span>XIV.</span> Notices and communications</h4>
-                                            <p>All notices given to us must be in the English Language and sent to eRemitly, 12 Old Bond Street, London, England, W1S 4PWWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
+                                            <p>All notices given to us must be in the English Language and sent to Le-Zemed, 12 Old Bond Street, London, England, W1S 4PWWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -357,23 +422,39 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>XXII.</span> Intellectual property</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>The Website the content, the name eRemitly and other names, logos, signs, domain names, email addresses and other indications of origin displayed on the Website relating to our products and/or services and all intellectual property relating to them and contained in them (including but not limited to copyrights, patents, database rights, design right, trade marks,) ("IPRs") are owned by us, our affiliates or third party licensors. Other names and logos of third party product, service and companies displayed on the Website may be the trademarks of third parties. You shall not acquire any right, title or interest in any such IPRs by reason of the Services or the Contract and all right, title and interest in and to the Website and the Application shall remain our property and/or the property of such other third parties.</li>
-                                                <li><span>B.</span>You may use the Website and the Application only for the purpose of the bona fide use of our Services as an individual consumer or business customer and only as permitted by these Terms and Conditions or described on the Website. You are authorized solely to view and to retain a copy of the pages of the Website for your own personal use. The Website and the Application and the Services may not be used for the purpose of testing the Service or to obtain information about the Service or about us. You may not duplicate, publish, modify, create derivative works from, participate in the transfer or sale of, post on the internet, or in any way distribute or exploit the Website, the Application or any portion thereof for any public or commercial use without our express written permission. You may not: (a) use any robot, spider, scraper or other automated device to access the Website or the Application or to use the Service; and/or (b) remove or alter any copyright, trade mark or other proprietary notice or legend displayed on the Website (or printed pages of the Website)</li>
+                                                <li><span>A.</span>The Website the content, the name Le-Zemed and other names, logos, signs, domain names, email addresses and other indications of origin displayed on the Website relating to our products and/or services and all intellectual property relating to them and contained in them (including but not limited to copyrights, patents, database rights, design right, trade marks,) ("IPRs") are owned by us, our affiliates or third party licensors. Other names and logos of third party product, service and companies displayed on the Website may be the trademarks of third parties. You shall not acquire any right, title or interest in any such IPRs by reason of the Services or the Contract and all right, title and interest in and to the Website and the Application shall remain our property and/or the property of such other third parties.</li>
+                                                <li>
+                                                    <span>B.</span>You may use the Website and the Application solely for the lawful use of our Services as an individual consumer or business customer, as permitted under these Terms and Conditions. You may view and retain copies of Website pages for personal use only. You may not:
+                                                    <ul class="info-number-list">
+                                                        <li>
+                                                            <span>•</span>Use the Website, Application, or Services for testing or gathering competitive information.
+                                                        </li>
+                                                        <li>
+                                                            <span>•</span>Duplicate, publish, modify, create derivative works from, transfer, sell, or distribute the Website or Application for public or commercial purposes without our express written permission.
+                                                        </li>
+                                                        <li>
+                                                            <span>•</span>Use automated devices such as robots, spiders, or scrapers to access the Website or Application.
+                                                        </li>
+                                                        <li>
+                                                            <span>•</span>Remove or alter copyright, trademark, or other proprietary notices from the Website.
+                                                        </li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </div>
 
                                         <div className="blog-content">
                                             <h4><span>XXIII.</span> The company and how to get in touch</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>eRemitly operates a website (the Website) that enable you to transfer money using a device connected to the Internet and/or a mobile phone.</li>
-                                                <li><span>B.</span>eRemitly  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 12 Old Bond Street, London, England, W1S 4PW</li>
+                                                <li><span>A.</span>Le-Zemed operates a website (the Website) that enable you to transfer money using a device connected to the Internet and/or a mobile phone.</li>
+                                                <li><span>B.</span>Le-Zemed  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 12 Old Bond Street, London, England, W1S 4PW</li>
                                                 <li><span>C.</span>
                                                     We can be contacted via the following means:
                                                     <ul class="info-number-list mt-3">
                                                         <li><span>a.</span>Telephone: <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
                                                         <li><span>b.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink></li>
-                                                        <li><span>d.</span>Website: <a href="http://eremitly.com/" target="_blank">http://eremitly.com/</a></li>
+                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
+                                                        <li><span>d.</span>Website: <a href="http://Le-Zemed.com/" target="_blank">http://Le-Zemed.com/</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

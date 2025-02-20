@@ -40,7 +40,7 @@ function Home() {
                       International <span className="square-text text-white">Money Transfer</span>
                     </h1>
                     <p className="hero-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem iste veritatis animi optio excepturi quasi pariatur architecto accusamus culpa deserunt aperiam provident sed beatae asperiores itaque alias soluta, labore impedit.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem iste veritatis animi optio excepturi quasi pariatur architecto accusamus culpa.
                     </p>
                     <div className="btn-group mt-5">
                       <NavLink to="/">
@@ -107,22 +107,12 @@ function Home() {
                       </div>
                     </div>
                     <div className="btn-group mt-5">
-                      <NavLink to="/" className="th-btn style10">Learn More</NavLink>
+                      <NavLink to="/about-us" className="th-btn style10">Learn More</NavLink>
                     </div>
                   </div>
                 </div>
                 <div className="col-xl-6 mb-30 mb-xl-0">
                   <img src="assets/img/normal/about-us.png" alt="About" />
-                  {/* <div className="img-box10">
-                    <div className="img-box10-wrapp">
-                      <div className="img1 global-img"><img src="assets/img/normal/about_8_1.jpg" alt="About" /></div>
-                      <div className="img2 global-img"><img src="assets/img/normal/about_8_2.jpg" alt="About" /></div>
-                    </div>
-                    <div className="year-counter">
-                      <h3 className="box-number"><span className="counter-number">80</span>%</h3>
-                      <p className="box-text">Growth Rate Average</p>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -225,7 +215,7 @@ function Home() {
           {/* Way to transfer and recived money end */}
 
           {/* Why choose us */}
-          <div className="choose-area2 overflow-hidden space background-image" style={{ backgroundImage: 'url("assets/img/bg/bg-black.jpg")' }}>
+          <div className="choose-area2 overflow-hidden space background-image" style={{ backgroundImage: 'url("assets/img/bg/bg-black.png")' }}>
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-xl-3">
@@ -238,7 +228,7 @@ function Home() {
                 <div className="col-xl-9">
                   <div className="choose-content">
                     <div className="mb-30">
-                      <span className="sub-title">Why Choose Us</span>
+                      <span className="sub-title">Why Choose Us?</span>
                       <h2 className="sec-title text-white">Last year, our clients made millions of transactions with Le-Zemed, and here's why:</h2>
                     </div>
                     <div className="choose-grid">
@@ -283,7 +273,7 @@ function Home() {
               <div className="row justify-content-center">
                 <div className="col-xl-9">
                   <div className="title-area text-center pe-xl-3 ps-xl-3">
-                    <span className="sub-title">How We Work</span>
+                    <span className="sub-title">How We Work?</span>
                     <h2 className="sec-title ">You Can Send Money With The Following Four Easy Steps</h2>
                   </div>
                 </div>

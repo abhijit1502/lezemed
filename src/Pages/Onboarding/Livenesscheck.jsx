@@ -136,8 +136,8 @@ function Livenesscheck() {
                                                 </div>
                                             </div>
 
-                                            <NavLink to="/onboarding" type="button" className="th-btn style777 mt-4">Previous</NavLink>&emsp;
-                                            <NavLink to="/finish" type="button" className="th-btn style7 mt-4">Next</NavLink>
+                                            <NavLink to="/onboarding" type="button" className="th-btn style7 mt-4">Previous</NavLink>&emsp;
+                                            <NavLink to="/finish" type="button" className="th-btn mt-4">Next</NavLink>
                                         </fieldset>
                                     </div>
                                 </div>

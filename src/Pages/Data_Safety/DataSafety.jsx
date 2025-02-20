@@ -40,7 +40,7 @@ function DataSafety() {
                                     <div className="title-area text-center">
                                         <h2 className="sec-title sec-title2">Data Safety</h2>
                                         <p>
-                                            If you have completed your registration with eRemitly but haven’t initiated any transaction, then you can send us a request to delete your account with us. Deleting your account will remove your data we have stored with us.
+                                            If you have completed your registration with Le-Zemed but haven’t initiated any transaction, then you can send us a request to delete your account with us. Deleting your account will remove your data we have stored with us.
                                         </p>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ function DataSafety() {
                                 </p>
                             </div>
 
-                            <div className="row">
+                            <div className="row justify-content-center">
                                 <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card cardcss" style={{ boxShadow: '0 5px 40px 0 rgba(0, 0, 0, .11)', margin: '0 0 20px 0', borderRadius: 35 }}>
                                         <img className="card-img-top" src="assets/img/data-safety/1.png" alt="Data Safety" />
@@ -84,17 +84,6 @@ function DataSafety() {
                                                 the ‘Yes’ option. We will delete all your data
                                                 records stored in our system. You can cancel the request by clicking on
                                                 the ‘No’ option.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-6 col-lg-6">
-                                    <div className="card cardcss" style={{ boxShadow: '0 5px 40px 0 rgba(0, 0, 0, .11)', margin: '0 0 20px 0', borderRadius: 35 }}>
-                                        <img className="card-img-top" src="assets/img/data-safety/4.png" alt="Data Safety" />
-                                        <div className="card-body">
-                                            <p className="card-text mb-4">
-                                                <strong>Step 4:</strong> Your request for account
-                                                deletion will be submitted. Our team will reach out to you shortly.
                                             </p>
                                         </div>
                                     </div>
@@ -132,27 +121,27 @@ function DataSafety() {
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                                
                                 <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card cardcss" style={{ boxShadow: '0 5px 40px 0 rgba(0, 0, 0, .11)', margin: '0 0 20px 0', borderRadius: 35 }}>
-                                        <img className="card-img-top" src="assets/img/data-safety/5.png" alt="Data Safety?" />
+                                        <img className="card-img-top" src="assets/img/data-safety/4.png" alt="Data Safety?" />
                                         <div className="card-body">
-                                            <p className="card-text">
-                                                <strong>Step 3:</strong> To proceed with your request, please click on
-                                                the ‘Yes’ option. We will delete all your data
-                                                records stored in our system.&nbsp;You can cancel the request by
-                                                clicking on the ‘No’ option.
+                                            <p className="card-text mb-4">
+                                                <strong>Step 3:</strong> Your request for account
+                                                deletion will be submitted. Our team will reach out to you shortly.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-6">
                                     <div className="card cardcss" style={{ boxShadow: '0 5px 40px 0 rgba(0, 0, 0, .11)', margin: '0 0 20px 0', borderRadius: 35 }}>
-                                        <img className="card-img-top" src="assets/img/data-safety/4.png" alt="Data Safety?" />
+                                        <img className="card-img-top" src="assets/img/data-safety/5.png" alt="Data Safety?" />
                                         <div className="card-body">
-                                            <p className="card-text mb-4">
-                                                <strong>Step 4:</strong> Your request for account
-                                                deletion will be submitted. Our team will reach out to you shortly.
+                                            <p className="card-text">
+                                                <strong>Step 4:</strong> To proceed with your request, please click on
+                                                the ‘Yes’ option. We will delete all your data
+                                                records stored in our system.&nbsp;You can cancel the request by
+                                                clicking on the ‘No’ option.
                                             </p>
                                         </div>
                                     </div>

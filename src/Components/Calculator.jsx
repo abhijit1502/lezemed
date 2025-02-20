@@ -476,7 +476,7 @@ function Calculator() {
                       <strong className="txtExchangeRates">{rate} {currencyCode}</strong>
                     </div>
                     <div className="info-right">
-                      <span className=''>Guaranted Rate</span>
+                      <span className=''>Guaranteed Rate</span>
                     </div>
                   </li>
                 </ul>

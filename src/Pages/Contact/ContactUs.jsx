@@ -103,7 +103,7 @@ function ContactUs() {
                                             </div>
                                             <div className="media-body">
                                                 <span className="contact-item_title">Address</span>
-                                                <span className="contact-item_text">12 Old Bond Street, London, England, W1S 4PW</span>
+                                                <span className="contact-item_text">84b High Street, Southall, England, UB1 3DB</span>
                                             </div>
                                         </div>
                                         <div className="contact-item">
@@ -113,7 +113,7 @@ function ContactUs() {
                                             <div className="media-body">
                                                 <span className="contact-item_title">Phone Number</span>
                                                 <span className="contact-item_text">
-                                                <NavLink to="tel:447446228131">+44 7446 228131</NavLink>
+                                                <NavLink to="tel:447878210109">+44 7878 210109</NavLink>
                                                 </span>
                                             </div>
                                         </div>
@@ -124,7 +124,7 @@ function ContactUs() {
                                             <div className="media-body">
                                                 <span className="contact-item_title">Email Id</span>
                                                 <span className="contact-item_text">
-                                                    <NavLink to="mailto:info@eremitly.com">info@eremitly.com</NavLink>
+                                                    <NavLink to="mailto:aabileh@hotmail.com">aabileh@hotmail.com</NavLink>
                                                 </span>
                                             </div>
                                         </div>

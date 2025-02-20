@@ -51,13 +51,13 @@ function Complaint_Policy() {
                                             <h4>Definitions</h4>
                                             <ul className="features two pt-2">
                                                 <li>
-                                                    By Email: <NavLink to='mailto:info@eremitly.com'>info@eremitly.com</NavLink>
+                                                    By Email: <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink>
                                                 </li>
                                                 <li>
-                                                    By Phone: <NavLink to="tel:447446228131">+44 7446 228131</NavLink>
+                                                    By Phone: <NavLink to="tel:447878210109">+44 7878 210109</NavLink>
                                                 </li>
                                                 <li className="end">
-                                                    By Post: <NavLink to="/" target='_blank'>12 Old Bond Street, London, England, W1S 4PW</NavLink>
+                                                    By Post: <NavLink to="/" target='_blank'>84b High Street, Southall, England, UB1 3DB</NavLink>
                                                 </li>
                                             </ul>
                                             <p className='mt-3'>
@@ -94,7 +94,7 @@ function Complaint_Policy() {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    If you're not in the UK, call <NavLink to="tel:447446228131">+44 7446 228131</NavLink>.
+                                                    If you're not in the UK, call <NavLink to="tel:447878210109">+44 7878 210109</NavLink>.
                                                 </li>
                                             </ul>
                                             <p>

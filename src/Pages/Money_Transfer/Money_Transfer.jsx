@@ -5,6 +5,7 @@ import Footer from '../../Components/Footer';
 import { NavLink } from 'react-router-dom';
 import Money_Transfer_Seo from '../../SEO/Money_Transfer_Seo';
 import CalculatorMoney from '../../Components/CalculatorMoney';
+import CorridorsSlider from '../../Components/CorridorsSlider';
 
 function Money_Transfer() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,23 +41,61 @@ function Money_Transfer() {
               </div>
             </div>
           </div>
-          <section className="process-sec overflow-hidden space">
+
+          <div className="overflow-hidden space pb-1 background-image" style={{ backgroundImage: 'url("assets/img/bg/bg-green.png")' }} id="about-sec">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-7">
+                  <div className="title-area text-center">
+                    <span className="sub-title">Fast & Easy way to send money</span>
+                    <h2 className="sec-title">Trustworthy Money Transfer Service</h2>
+                  </div>
+                </div>
+              </div>
+              <div className="row gy-4 justify-content-between align-items-center">
+                <div className="col-xl-5">
+                  <CalculatorMoney />
+                </div>
+                <div className="col-xl-7">
+                  <div className="about-wrapp">
+                    <div className="about-content ms-xl-2">
+                      <p>
+                        We offer a reliable solution for all your money transfer needs, ensuring a safe and secure way to send funds internationally. Our process is clear and easy to follow, making transfers simple and hassle-free. No matter where you're sending money globally, you can trust our service to deliver it securely to the right place.
+                      </p>
+                      <div className="checklist style2 mb-40">
+                        <ul>
+                          <li>Your money is protected by our fraud and security teams.</li>
+                          <li>2-factor authentication secures your account.</li>
+                          <li>Money is held in established financial institutions.</li>
+                        </ul>
+                      </div>
+                      <div className="btn-group mt-5">
+                        <NavLink to="/" className="th-btn style10" target='_blank'>Send Money</NavLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='mt-2'>                
+              <CorridorsSlider />
+              </div>
+            </div>
+          </div>
+
+          <div className="process-sec overflow-hidden space">
             <div className="container">
               <div className="title-area text-center mb-30">
-                <span className="sub-title sub-title2">Fast & Easy way to send money</span>
-                <h2 className="sec-title">Trustworthy Money Transfer Service</h2>
+                <span className="sub-title">Send money</span>
+                <h2 className="sec-title">Reasons to choose Le-Zemed</h2>
               </div>
               <div className="process-box-area">
                 <div className="row">
-                  <div className="col-xl-5">
-                    <CalculatorMoney/>
-                  </div>
-                  <div className="col-xl-7">
-                    <div className="process-area">
-                      <p className="box-desc" style={{ maxWidth: '100%' }}>
-                        We offer a reliable solution for all your money transfer needs, ensuring a safe and secure way to send funds internationally. Our process is clear and easy to follow, making transfers simple and hassle-free. No matter where you're sending money globally, you can trust our service to deliver it securely to the right place.
-                      </p>
+                  <div className="col-xl-4">
+                    <div className="process4-image global-img">
+                      <img src="assets/img/normal/money-transfer.png" alt />
                     </div>
+                  </div>
+                  <div className="col-xl-8">
                     <div className="row g-0">
                       <div className="col-md-6 col-lg-6 process-box-wrap">
                         <div className="process-box">
@@ -115,14 +154,14 @@ function Money_Transfer() {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
 
           {/* Mobile App Section Start */}
           <div className="about-area4 bg-mask" id="about-sec" style={{ maskImage: 'url("assets/img/bg/testi_bg_shape.png")' }}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-6">
-                  <div className="title-area mb-35"><span className="sub-title sub-title2">Download our app</span>
+                  <div className="title-area mb-35"><span className="sub-title">Download our app</span>
                     <h2 className="sec-title">Save time with the eRemitly app</h2></div>
                   <p className="mt-n2 mb-25">
                     Start your money transfer journey with the eRemitly app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
@@ -163,7 +202,7 @@ function Money_Transfer() {
               <div className="row justify-content-center">
                 <div className="col-lg-6">
                   <div className="title-area text-center pe-xl-3 ps-xl-3">
-                    <span className="sub-title sub-title2">Our FAQ'S</span>
+                    <span className="sub-title">Our FAQ'S</span>
                     <h2 className="sec-title">Frequently Ask Questions</h2>
                   </div>
                 </div>

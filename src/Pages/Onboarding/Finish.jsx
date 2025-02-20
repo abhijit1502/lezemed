@@ -74,7 +74,7 @@ function Finish() {
                                                         <h6 className="purple-text text-center mt-3">If you have any further questions then please visit our Onboarding FAQs page.</h6>
                                                     </div>
                                                     <div className='col-xl-6 col-lg-6 col-12'>
-                                                        <NavLink to="/onboarding-faq" className="th-btn style7 mt-3">FAQs</NavLink>
+                                                        <NavLink to="/onboarding-faq" className="th-btn mt-3">FAQs</NavLink>
                                                     </div>
                                                 </div>
                                             </div>

@@ -2307,7 +2307,7 @@ textarea.is-invalid {
 .th-btn:before {
     position: absolute;
     content: "";
-    background: var(--title-color);
+    background: var(--theme-color2);
     width: 110%;
     min-height: 200px;
     z-index: -1;
@@ -3523,6 +3523,16 @@ hr.title-line {
     background: var(--theme-color);
     top: 0;
 }
+
+.icon-masking .logo {
+    max-width: 27%;
+}
+
+@media (max-width: 375px) {
+    .icon-masking .logo {
+        max-width: 45%;
+    }
+  }
 
 .icon-masking2 {
     position: relative;
@@ -7051,14 +7061,14 @@ a.text-theme:hover,
 .header-layout4 .sticky-wrapper.sticky .menu-area {
     max-width: 100%;
     border-radius: 0;
-    background-color: #022124;
+    background-color: #fff;
 }
 
 .header-layout4 .menu-area {
     max-width: 1620px;
     display: block;
     margin: auto;
-    background: rgba(000, 000, 000, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     -webkit-backdrop-filter: blur(24.9px);
     backdrop-filter: blur(24.9px);
     border-radius: 20px;
@@ -7076,11 +7086,11 @@ a.text-theme:hover,
 }
 
 .header-layout4 .main-menu.style2>ul>li>a {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .header-layout4 .main-menu.style2>ul>li>a:hover:before {
-    background-color: var(--white-color);
+    background-color: var(--theme-color2);
     opacity: 0.1;
 }
 
@@ -7838,7 +7848,7 @@ a.text-theme:hover,
     font-family: var(--title-font);
     font-weight: 500;
     font-size: 16px;
-    color: var(--theme-color);
+    color: var(--black-color);
 }
 
 .breadcumb-title {
@@ -9451,7 +9461,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 .hero-style4 {
     position: relative;
     z-index: 6;
-    padding: 245px 0 210px 0;
+    padding: 245px 0 240px 0;
     /* max-width: 595px; */
 }
 
@@ -14216,7 +14226,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .contact-item:hover .contact-item_icon {
-    background-color: var(--theme-color);
+    background-color: var(--theme-color2);
 }
 
 .contact-item:hover .contact-item_icon img {
@@ -18406,9 +18416,15 @@ span.select2-selection.select2-selection--single:focus {
     -webkit-backdrop-filter: blur(21.3px);
     backdrop-filter: blur(21.3px);
     border-radius: 10px;
-    padding: 30px 60px;
-    margin-top: 120px;
+    padding: 15px;
+    margin-top: 0px;
 }
+
+.flag-img {
+    width: 40px;
+    height: 40px !important;
+    border-radius: 50%;
+  }
 
 @media (max-width: 575px) {
     .brand-slider {
@@ -23532,8 +23548,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .process4-image {
-    border-radius: 30px;
-    margin-right: 40px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
 
 @media (max-width: 1199px) {
@@ -24639,6 +24655,7 @@ span.select2-selection.select2-selection--single:focus {
         -ms-flex-align: start;
         align-items: start;
         padding-bottom: 50px;
+        display: none;
     }
 }
 
@@ -24663,6 +24680,7 @@ span.select2-selection.select2-selection--single:focus {
     .choose-counter .box-title {
         font-size: 100px;
         line-height: 140px;
+        display: none;
     }
 }
 
@@ -25577,7 +25595,7 @@ span.select2-selection.select2-selection--single:focus {
 /*Calculator CSS*/
 
 .cal_css {
-    padding: 20px;
+    padding: 15px;
     border-radius: 45px 0 45px 0px;
     -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
@@ -25636,7 +25654,7 @@ span.select2-selection.select2-selection--single:focus {
     border-left: none;
     border-right: none;
     border-radius: 25px;
-    padding: 10px 7px;
+    padding: 10px;
     color: #163235;
     font-weight: bolder;
     font-size: 20px;
@@ -26050,8 +26068,8 @@ ul.info-number-list li span {
 
 
 .help-tabs .nav-link:hover {
-    box-shadow: 0 4px 8px 0 rgb(112, 215, 21), 0 6px 20px 0 rgb(112, 215, 21);
-    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgb(0, 166, 81), 0 6px 20px 0 rgb(0, 166, 81);
+  transform: scale(1.1);
 }
 
 .help-tabs .nav-link .box-title {

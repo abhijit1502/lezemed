@@ -90,11 +90,11 @@ function Help() {
                                 </div>
                             </div>
                             <div className="nav nav-tabs help-tabs" id="nav-tab" role="tablist">
-                                <NavLink to="https://api.whatsapp.com/send?phone=447446228131&amp;text=Hello There, I would like to enquire about money transfer." className="nav-link" target='_blank'>
+                                <NavLink to="https://api.whatsapp.com/send?phone=447878210109&amp;text=Hello There, I would like to enquire about money transfer." className="nav-link" target='_blank'>
                                     <img src="assets/img/photo/chat.png" />
                                     <span className="box-title">Chat</span>
                                 </NavLink>
-                                <NavLink to="tel:447446228131" className="nav-link">
+                                <NavLink to="tel:447878210109" className="nav-link">
                                     <img src="assets/img/photo/phone.png" />
                                     <span className="box-title">Phone</span>
                                 </NavLink>

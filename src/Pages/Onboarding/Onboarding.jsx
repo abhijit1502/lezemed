@@ -128,7 +128,7 @@ function Onboarding() {
                                                     </div>
                                                 </div>
                                                 
-                                                <NavLink to="/livenesscheck" className="th-btn style7 mt-4">Next</NavLink>
+                                                <NavLink to="/livenesscheck" className="th-btn mt-4">Next</NavLink>
                                             </fieldset>
                                         </div>
                                 </div>

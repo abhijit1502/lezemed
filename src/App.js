@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Home from "./Pages/Home/Home";
+import AboutUs from "./Pages/About/AboutUs";
 import Error from "./Pages/Error";
 import ContactUs from "./Pages/Contact/ContactUs";
 import GeneralFAQ from "./Pages/FAQ/GeneralFAQ";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
       <Route path="/*" element={<Error />} /> 
       <Route path="/" element={<Home />} /> 
+      <Route path="/about-us" element={<AboutUs />} /> 
       <Route path="/contact" element={<ContactUs />} /> 
       <Route path="/generalfaq" element={<GeneralFAQ />} /> 
       <Route path="/help" element={<Help />} /> 

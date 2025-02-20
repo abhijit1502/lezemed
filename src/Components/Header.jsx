@@ -45,16 +45,16 @@ function Header() {
                     <div className="th-mobile-menu">
                         <ul>
                             <li>
-                                <NavLink to="/">Money Transfer</NavLink>
+                                <NavLink to="/money-transfer">Money Transfer</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/">About Us</NavLink>
+                                <NavLink to="/about-us">About Us</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/">Help</NavLink>
+                                <NavLink to="/help">Help</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/">Contact Us</NavLink>
+                                <NavLink to="/contact">Contact Us</NavLink>
                             </li>
                         </ul>
 
@@ -73,7 +73,7 @@ function Header() {
                                 <div className="col-auto">
                                     <div className="header-logo">
                                         <NavLink className="icon-masking" to="/">
-                                            <img src="assets/img/logo.png" alt="Le-Zemed" style={{maxWidth:'27%'}}/>
+                                            <img className='logo' src="assets/img/logo.svg" alt="Le-Zemed"/>
                                         </NavLink>
                                     </div>
                                 </div>
@@ -81,16 +81,16 @@ function Header() {
                                     <nav className="main-menu style2 d-none d-lg-inline-block">
                                         <ul>
                                             <li>
-                                                <NavLink to="/">Money Transfer</NavLink>
+                                                <NavLink to="/money-transfer">Money Transfer</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/">About Us</NavLink>
+                                                <NavLink to="/about-us">About Us</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/">Help</NavLink>
+                                                <NavLink to="/help">Help</NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to="/">Contact Us</NavLink>
+                                                <NavLink to="/contact">Contact Us</NavLink>
                                             </li>
                                         </ul>
                                     </nav>
