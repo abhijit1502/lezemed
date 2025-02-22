@@ -40,7 +40,7 @@ function Home() {
                       International <span className="square-text text-white">Money Transfer</span>
                     </h1>
                     <p className="hero-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem iste veritatis animi optio excepturi quasi pariatur architecto accusamus culpa.
+                    Start your money transfer journey with the Le-Zemed app! Download from the Play Store or App Store to send money quickly, securely, and affordably. Le-Zemed makes international transfers fast, reliable, and hassle-free. for a few seconds.
                     </p>
                     <div className="btn-group mt-5">
                       <NavLink to="/">
@@ -75,7 +75,12 @@ function Home() {
                     <div className="title-area mb-35 pe-xl-4 me-xl-3">
                       <span className="sub-title">About Us</span>
                       <h2 className="sec-title">Le-Zemed</h2>
-                      <p className="mb-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore deleniti, impedit neque officia minus eligendi architecto consequuntur dolores saepe adipisci, in consequatur reprehenderit possimus ea omnis recusandae! Similique, iusto?</p>
+                      <p className="mb-2">
+                      Le Zemed is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
+                      </p>
+                      <p className="mb-2">
+                      Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, Le Zemed makes it easy to transfer funds with confidence.
+                      </p>
                     </div>
                     <div className="about-feature-wrap">
                       <div className="about-feature style3" style={{ maxWidth: '100%' }}>
@@ -144,7 +149,7 @@ function Home() {
                           <h5 className>Transfer online</h5>
                         </div>
                         <p className="process-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione vel tempora dolore, cumque reiciendis saepe, iusto officia dignissimos ducimus id optio quasi. Id doloribus totam veniam quod ducimus beatae.
+                        Sign up to set up an account. Once your account is set up, it is easy to transfer money to a designated account. 
                         </p>
                       </div>
                       <div className="process-content">
@@ -155,7 +160,7 @@ function Home() {
                           <h5 className>Transfer with our app</h5>
                         </div>
                         <p className="process-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quas commodi itaque earum numquam totam tempore accusamus accusantium sit, et exercitationem delectus ea vel perferendis ad nihil explicabo dignissimos consequuntur?
+                        Download our app on the app store and play store Sign up and start sending money seamlessly.
                         </p>
                       </div>
                       <div className="process-content">
@@ -166,7 +171,7 @@ function Home() {
                           <h5 className>Transfer in person</h5>
                         </div>
                         <p className="process-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat reprehenderit fugiat quo repellat! Pariatur recusandae molestiae magni molestias odit quibusdam, nobis eveniet nemo corrupti autem sed voluptatibus. Modi, eligendi.
+                        Prefer a personal touch? Visit our store at 84b High Street, Southall, England, UB1 3DB location to send money in person. Our friendly staff is here to guide you through a quick and reliable transaction every time.
                         </p>
                       </div>
                     </div>
@@ -181,7 +186,7 @@ function Home() {
                           <h5 className>Bank account</h5>
                         </div>
                         <p className="process-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ratione vel tempora dolore, cumque reiciendis saepe, iusto officia dignissimos ducimus id optio quasi. Id doloribus totam veniam quod ducimus beatae.
+                        Receive money directly into your bank account for a safe and convenient transfer. No need to visit a location—funds are deposited securely and quickly.
                         </p>
                       </div>
                       <div className="process-content">
@@ -192,7 +197,7 @@ function Home() {
                           <h5 className>Cash pickup</h5>
                         </div>
                         <p className="process-text">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quas commodi itaque earum numquam totam tempore accusamus accusantium sit, et exercitationem delectus ea vel perferendis ad nihil explicabo dignissimos consequuntur?
+                        Need cash in hand? Collect your money from our store at 84b High Street, Southall, England, UB1 3DB instantly. A secure and hassle-free way to access your funds.
                         </p>
                       </div>
                       <div className="process-content">
@@ -203,13 +208,16 @@ function Home() {
                           <h5 className>Mobile wallet</h5>
                         </div>
                         <p className="process-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat reprehenderit fugiat quo repellat! Pariatur recusandae molestiae magni molestias odit quibusdam, nobis eveniet nemo corrupti autem sed voluptatibus. Modi, eligendi.
+                        Get your money directly in your mobile wallet and access it anytime, anywhere. A fast and easy way to receive funds without a bank account.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <h6 className='text-center'>
+              <em>Choose the method that works best for you and enjoy seamless transfers with Le Zemed!</em>
+              </h6>
             </div>
           </div>
           {/* Way to transfer and recived money end */}
@@ -239,7 +247,7 @@ function Home() {
                         <h3 className="box-title">Committed to security</h3>
                       </div>
                       <p className="box-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, quo et doloremque temporibus impedit inventore praesentium deleniti vitae recusandae laboriosam quaerat, ad nam molestias accusamus eos sit. Ut, accusamus est.
+                      Your safety is our priority. We use advanced encryption and fraud prevention measures to ensure secure and reliable money transfers.
                       </p>
                     </div>
                     <div className="choose-grid">
@@ -249,7 +257,9 @@ function Home() {
                         </div>
                         <h3 className="box-title">International reach</h3>
                       </div>
-                      <p className="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut, saepe odio expedita earum natus obcaecati tempore exercitationem! Blanditiis est nesciunt deserunt magni aut, natus vero eum quisquam temporibus animi.</p>
+                      <p className="box-text">
+                      Send and receive money across borders with ease. With a global network of banking partners and cash pickup locations, we make international transfers seamless.
+                      </p>
                     </div>
                     <div className="choose-grid">
                       <div className="choose-content">
@@ -258,7 +268,9 @@ function Home() {
                         </div>
                         <h3 className="box-title">Register for free</h3>
                       </div>
-                      <p className="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam praesentium incidunt in. Ipsa minus ducimus illo nulla eligendi quod eos est corporis provident quos expedita, veritatis, consequatur in accusamus?</p>
+                      <p className="box-text">
+                      Sign up in just a few minutes—no hidden fees, no hassle. Enjoy a simple, user-friendly platform with competitive exchange rates and low transfer costs.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -285,7 +297,7 @@ function Home() {
                       <img src="assets/img/icon/customer.svg" alt="Icon" style={{ maxWidth: '70%' }} /> <span className="box-shape"></span></div>
                     <h3 className="box-title "><a href="/">1. Create An Account</a></h3>
                     <p className="box-text ">
-                      Download our app and get signed up in just minutes. It’s quick and completely free!
+                    Download our app and get signed up in just minutes. It’s quick and completely free!
                     </p>
                   </div>
                 </div>
@@ -295,7 +307,7 @@ function Home() {
                       <img src="assets/img/icon/transfer.svg" alt="Icon" style={{ maxWidth: '70%' }} /> <span className="box-shape"></span></div>
                     <h3 className="box-title "><a href="/">2. Set up a transfer</a></h3>
                     <p className="box-text ">
-                      Add your recipient and specify the amount you wish to send or receive in the foreign currency.
+                    Add your recipient and specify the amount you wish to send or receive in the foreign currency.
                     </p>
                   </div>
                 </div>
@@ -305,7 +317,7 @@ function Home() {
                       <img src="assets/img/icon/securely.svg" alt="Icon" style={{ maxWidth: '70%' }} /> <span className="box-shape"></span></div>
                     <h3 className="box-title "><a href="/">3. Pay securely</a></h3>
                     <p className="box-text ">
-                      Complete your payment via Bank Transfer—it's the safest and fastest method to ensure your funds are received.
+                    Complete your payment via Bank Transfer—it's the safest and fastest method to ensure your funds are received.
                     </p>
                   </div>
                 </div>
@@ -314,7 +326,8 @@ function Home() {
                     <div className="box-icon">
                       <img src="assets/img/icon/done.svg" alt="Icon" style={{ maxWidth: '70%' }} /> <span className="box-shape"></span></div>
                     <h3 className="box-title "><a href="/">4. That's it!</a></h3>
-                    <p className="box-text ">Track your transfer from the app. We payout to beneficiary as promised in delivery method.</p>
+                    <p className="box-text ">Track your transfer from the app. We payout to beneficiary as promised in
+                    delivery method.</p>
                   </div>
                 </div>
               </div>

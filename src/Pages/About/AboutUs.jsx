@@ -42,7 +42,18 @@ function AboutUs() {
                                         <div className="title-area mb-35 pe-xl-4 me-xl-3">
                                             <span className="sub-title">About Us</span>
                                             <h2 className="sec-title">Le-Zemed</h2>
-                                            <p className="mb-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore deleniti, impedit neque officia minus eligendi architecto consequuntur dolores saepe adipisci, in consequatur reprehenderit possimus ea omnis recusandae! Similique, iusto?</p>
+                                            <p className="mb-2">
+                                                Le Zemed is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
+                                            </p>
+                                            <p className="mb-2">
+                                                Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, Le Zemed makes it easy to transfer funds with confidence.
+                                            </p>
+                                            <p className="mb-2">
+                                                With advanced security measures and a user-friendly experience, we are committed to providing a trusted and convenient solution for all your international money transfer needs.
+                                            </p>
+                                            <p className="mb-2">
+                                                <strong>Le Zemed – Seamless Transfers You Can Trust.</strong>
+                                            </p>
                                         </div>
                                         <div className="about-feature-wrap">
                                             <div className="about-feature style3" style={{ maxWidth: '100%' }}>
