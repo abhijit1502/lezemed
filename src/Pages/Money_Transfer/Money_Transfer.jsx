@@ -162,9 +162,9 @@ function Money_Transfer() {
               <div className="row">
                 <div className="col-xl-6">
                   <div className="title-area mb-35"><span className="sub-title">Download our app</span>
-                    <h2 className="sec-title">Save time with the eRemitly app</h2></div>
+                    <h2 className="sec-title">Save time with the Le-Zemed app</h2></div>
                   <p className="mt-n2 mb-25">
-                    Start your money transfer journey with the eRemitly app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
+                    Start your money transfer journey with the Le-Zemed app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
                   </p>
                   <div className="checklist style3 mb-35">
                     <ul>
@@ -174,7 +174,7 @@ function Money_Transfer() {
                       <li><i className="fa-solid fa-circle-check" />Pay using your favourite Payment Method</li>
                     </ul>
                   </div>
-                  <h6><em>Make your global money transfers smoother with eRemitly.</em></h6>
+                  <h6><em>Make your global money transfers smoother with Le-Zemed.</em></h6>
                   <div className="btn-group mt-35">
                     <NavLink target="_blank" to="https://play.google.com/">
                       <img src="assets/img/theme-img/play-store-btn.png" alt="img" />

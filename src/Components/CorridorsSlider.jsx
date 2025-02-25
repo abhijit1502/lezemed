@@ -46,10 +46,10 @@ function CorridorsSlider() {
                     <NavLink to="#">
                         <div className="flag-div d-flex align-items-center">
                             <div className="flag-mr">
-                                <img className="flag-img" src="assets/img/flags/etb.png" alt="Money Transfer to Ethopia" />
+                                <img className="flag-img" src="assets/img/flags/etb.png" alt="Money Transfer to Ethiopia" />
                             </div>
                             <div className="currency-code">
-                                <h4>Ethopia</h4>
+                                <h4>Ethiopia</h4>
                             </div>
                         </div>
                     </NavLink>
