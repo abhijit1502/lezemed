@@ -40,7 +40,7 @@ function Home() {
                       International <span className="square-text text-white">Money Transfer</span>
                     </h1>
                     <p className="hero-text">
-                    Start your money transfer journey with the Le-Zemed app! Download from the Play Store or App Store to send money quickly, securely, and affordably. Le-Zemed makes international transfers fast, reliable, and hassle-free.
+                    Start your money transfer journey with the Le-Zemed app! Download from the Play Store or App Store to send money quickly, securely, and affordably. Le-Zemed makes international transfers fast, reliable, and hassle-free. for a few seconds.
                     </p>
                     <div className="btn-group mt-5">
                       <NavLink to="/">
@@ -76,7 +76,7 @@ function Home() {
                       <span className="sub-title">About Us</span>
                       <h2 className="sec-title">Le-Zemed</h2>
                       <p className="mb-2">
-                      Le Zemed is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somalia, ensuring your transactions are safe, reliable, and cost-effective.
+                      Le Zemed is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
                       </p>
                       <p className="mb-2">
                       Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, Le Zemed makes it easy to transfer funds with confidence.
@@ -160,7 +160,7 @@ function Home() {
                           <h5 className>Transfer with our app</h5>
                         </div>
                         <p className="process-text">
-                        Download our app from the app store and play store Sign up and start sending money seamlessly.
+                        Download our app on the app store and play store Sign up and start sending money seamlessly.
                         </p>
                       </div>
                       <div className="process-content">
@@ -237,7 +237,7 @@ function Home() {
                   <div className="choose-content">
                     <div className="mb-30">
                       <span className="sub-title">Why Choose Us?</span>
-                      <h2 className="sec-title text-white">Last year, our clients made millions of transactions with Le-Zemed, and here's why:</h2>
+                      <h2 className="sec-title text-white">Le-Zemed ensures secure, reliable, and hassle-free money transfers you can trust.</h2>
                     </div>
                     <div className="choose-grid">
                       <div className="choose-content">
