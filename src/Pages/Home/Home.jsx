@@ -401,7 +401,7 @@ function Home() {
                 <div className="col-lg-6">
                   <div className="title-area text-center pe-xl-3 ps-xl-3">
                     <span className="sub-title">Our FAQ'S</span>
-                    <h2 className="sec-title">Frequently Ask Questions</h2>
+                    <h2 className="sec-title">Frequently Asked Questions</h2>
                   </div>
                 </div>
               </div>

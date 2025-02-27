@@ -34,7 +34,7 @@ function CorridorsSlider() {
                     <NavLink to="#">
                         <div className="flag-div d-flex align-items-center">
                             <div className="flag-mr">
-                                <img className="flag-img" src="assets/img/flags/afn.png" alt="Money Transfer to Africa" />
+                                <img className="flag-img" src="assets/img/flags/zar.png" alt="Money Transfer to Africa" />
                             </div>
                             <div className="currency-code">
                                 <h4>Africa</h4>
