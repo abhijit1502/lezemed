@@ -236,7 +236,7 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>VII.</span> Limitations of liability</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have the right to receive a refund, less applicable fees, or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink> for more information regarding refunds and compensation.</li>
+                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have the right to receive a refund, less applicable fees, or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:info@SRemit.com'>info@SRemit.com</NavLink> for more information regarding refunds and compensation.</li>
                                                 <li><span>B.</span>Claims for refund or compensation must be supported by all available evidence.</li>
                                                 <li><span>C.</span>If a money transfer in accordance with an order you made and that we Confirmed is delayed or fails and you are not entitled to a refund or compensation under the Money Transfer Regulations, we expressly limit our liability in respect of any such delayed or failed transfer (including for any claimed refund) to the greater of: (a) the amount of any service charge that was paid to us; and (b) €600. The foregoing cap on our liability applies to any single transaction, act, omission or event and to any number of related transactions, acts, and omissions or events.</li>
                                                 <li><span>D.</span>Except as provided in clause 9.5, we shall not be liable to you or to any third party in relation to the Services, whether for breach of contract, tort (including negligence), misrepresentation, unjust enrichment or any other grounds, for any indirect, incidental, consequential or special damages including any loss of profits or savings or anticipated profits or savings, loss of data, loss of opportunity, loss or reputation, goodwill or business or any economic loss, even if we are advised in advance of the possibility of such loss.</li>
@@ -316,7 +316,7 @@ function Terms_and_Conditions() {
                                                     You have a right to cancel an order before payment has been made to the Recipient. You may exercise this right by:
                                                     <ul class="info-number-list mt-3">
                                                         <li><span>a.</span>Calling us on <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
-                                                        <li><span>b.</span>Emailing us at <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
+                                                        <li><span>b.</span>Emailing us at <NavLink to='mailto:info@SRemit.com'>info@SRemit.com</NavLink></li>
                                                         <li><span>c.</span>If you exercise your right to cancel the order after you have already paid us the funds to be transferred:</li>
                                                         <li><span>d.</span>we will refund money paid by you and intended for a Recipient only under the condition that it has not already been paid out to the Recipient in accordance with your original instructions prior to the cancellation request; and</li>
                                                         <li><span>e.</span>we reserve the right to retain the Fees charged for the Service (and we may charge you with those Fees if they have not yet been paid); and</li>
@@ -338,7 +338,7 @@ function Terms_and_Conditions() {
                                                     We value your feedback as it helps us improve our service. We have established internal procedures for complaints. You can make a complaint in writing to us regarding any aspect of the Service by mail or e-mail to the following addresses:
                                                     <ul class="info-number-list mt-3">
                                                         <li><span>a.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>b.</span><NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
+                                                        <li><span>b.</span><NavLink to='mailto:info@SRemit.com'>info@SRemit.com</NavLink></li>
                                                     </ul>
                                                 </li>
                                                 <li><span>B.</span>We will investigate your complaint and use reasonable endeavours to come back to you with the results of our investigation within 7 working days after receipt of your complaint.</li>
@@ -356,7 +356,7 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>XII.</span> Money transfer and the payment services regulations</h4>
                                             <p>The Payment Services Regulations 2017 (hereinafter called "the Regulations") govern the transfer of money to recipients within the European Economic Area (being all members states of the European Union, together with Norway, Iceland and Liechtenstein), where the transfer of funds is carried out in Euros, Sterling or the currency of another EEA state which has not adopted the Euro as its currency.</p>
-                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink> for more information.</p>
+                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:info@SRemit.com'>info@SRemit.com</NavLink> for more information.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -366,7 +366,7 @@ function Terms_and_Conditions() {
 
                                         <div className="blog-content">
                                             <h4><span>XIV.</span> Notices and communications</h4>
-                                            <p>All notices given to us must be in the English Language and sent to Le-Zemed, 12 Old Bond Street, London, England, W1S 4PWWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
+                                            <p>All notices given to us must be in the English Language and sent to SRemit, 12 Old Bond Street, London, England, W1S 4PWWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -422,7 +422,7 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>XXII.</span> Intellectual property</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>The Website the content, the name Le-Zemed and other names, logos, signs, domain names, email addresses and other indications of origin displayed on the Website relating to our products and/or services and all intellectual property relating to them and contained in them (including but not limited to copyrights, patents, database rights, design right, trade marks,) ("IPRs") are owned by us, our affiliates or third party licensors. Other names and logos of third party product, service and companies displayed on the Website may be the trademarks of third parties. You shall not acquire any right, title or interest in any such IPRs by reason of the Services or the Contract and all right, title and interest in and to the Website and the Application shall remain our property and/or the property of such other third parties.</li>
+                                                <li><span>A.</span>The Website the content, the name SRemit and other names, logos, signs, domain names, email addresses and other indications of origin displayed on the Website relating to our products and/or services and all intellectual property relating to them and contained in them (including but not limited to copyrights, patents, database rights, design right, trade marks,) ("IPRs") are owned by us, our affiliates or third party licensors. Other names and logos of third party product, service and companies displayed on the Website may be the trademarks of third parties. You shall not acquire any right, title or interest in any such IPRs by reason of the Services or the Contract and all right, title and interest in and to the Website and the Application shall remain our property and/or the property of such other third parties.</li>
                                                 <li>
                                                     <span>B.</span>You may use the Website and the Application solely for the lawful use of our Services as an individual consumer or business customer, as permitted under these Terms and Conditions. You may view and retain copies of Website pages for personal use only. You may not:
                                                     <ul class="info-number-list">
@@ -446,15 +446,15 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>XXIII.</span> The company and how to get in touch</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>Le-Zemed operates a website (the Website) that enable you to transfer money using a device connected to the Internet and/or a mobile phone.</li>
-                                                <li><span>B.</span>Le-Zemed  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 12 Old Bond Street, London, England, W1S 4PW</li>
+                                                <li><span>A.</span>SRemit operates a website (the Website) that enable you to transfer money using a device connected to the Internet and/or a mobile phone.</li>
+                                                <li><span>B.</span>SRemit  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 12 Old Bond Street, London, England, W1S 4PW</li>
                                                 <li><span>C.</span>
                                                     We can be contacted via the following means:
                                                     <ul class="info-number-list mt-3">
                                                         <li><span>a.</span>Telephone: <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
                                                         <li><span>b.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:info@Le-Zemed.com'>info@Le-Zemed.com</NavLink></li>
-                                                        <li><span>d.</span>Website: <a href="http://Le-Zemed.com/" target="_blank">http://Le-Zemed.com/</a></li>
+                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:info@SRemit.com'>info@SRemit.com</NavLink></li>
+                                                        <li><span>d.</span>Website: <a href="http://SRemit.com/" target="_blank">http://SRemit.com/</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

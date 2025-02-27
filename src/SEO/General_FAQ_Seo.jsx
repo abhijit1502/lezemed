@@ -5,9 +5,9 @@ function General_FAQ_Seo() {
     return (
         <div>
             <Helmet>
-                <title>General FAQs | Le-Zemed</title>
+                <title>General FAQs | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="General FAQs | Le-Zemed" />
+                <meta property="og:title" content="General FAQs | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

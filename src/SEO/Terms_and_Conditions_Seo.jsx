@@ -5,9 +5,9 @@ function Terms_and_Conditions_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Terms and Conditions | Le-Zemed</title>
+                <title>Terms and Conditions | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Terms and Conditions | Le-Zemed" />
+                <meta property="og:title" content="Terms and Conditions | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

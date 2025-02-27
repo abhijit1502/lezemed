@@ -40,7 +40,7 @@ function Header() {
                         <i className="fal fa-times" />
                     </button>
                     <div className="mobile-logo">
-                        <NavLink to="/"><img src="assets/img/logo.svg" alt="Le-Zemed" /></NavLink>
+                        <NavLink to="/"><img src="assets/img/logo.svg" alt="SRemit" /></NavLink>
                     </div>
                     <div className="th-mobile-menu">
                         <ul>
@@ -73,7 +73,7 @@ function Header() {
                                 <div className="col-auto">
                                     <div className="header-logo">
                                         <NavLink className="icon-masking" to="/">
-                                            <img className='logo' src="assets/img/logo.svg" alt="Le-Zemed"/>
+                                            <img className='logo' src="assets/img/logo.svg" alt="SRemit"/>
                                         </NavLink>
                                     </div>
                                 </div>

@@ -3524,13 +3524,13 @@ hr.title-line {
     top: 0;
 }
 
-.icon-masking .logo {
-    max-width: 27%;
-}
+/* .icon-masking .logo {
+    max-width: 10%;
+} */
 
 @media (max-width: 375px) {
     .icon-masking .logo {
-        max-width: 45%;
+        max-width: 75%;
     }
   }
 

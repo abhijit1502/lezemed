@@ -5,9 +5,9 @@ function Finish_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Onboarding | Le-Zemed</title>
+                <title>Onboarding | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Onboarding | Le-Zemed" />
+                <meta property="og:title" content="Onboarding | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

@@ -40,7 +40,7 @@ function Home() {
                       International <span className="square-text text-white">Money Transfer</span>
                     </h1>
                     <p className="hero-text">
-                    Start your money transfer journey with the Le-Zemed app! Download from the Play Store or App Store to send money quickly, securely, and affordably. Le-Zemed makes international transfers fast, reliable, and hassle-free. for a few seconds.
+                    Start your money transfer journey with the SRemit app! Download from the Play Store or App Store to send money quickly, securely, and affordably. SRemit makes international transfers fast, reliable, and hassle-free. for a few seconds.
                     </p>
                     <div className="btn-group mt-5">
                       <NavLink to="/">
@@ -74,12 +74,12 @@ function Home() {
                   <div className="">
                     <div className="title-area mb-35 pe-xl-4 me-xl-3">
                       <span className="sub-title">About Us</span>
-                      <h2 className="sec-title">Le-Zemed</h2>
+                      <h2 className="sec-title">SRemit</h2>
                       <p className="mb-2">
-                      Le Zemed is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
+                      SRemit is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
                       </p>
                       <p className="mb-2">
-                      Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, Le Zemed makes it easy to transfer funds with confidence.
+                      Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, SRemit makes it easy to transfer funds with confidence.
                       </p>
                     </div>
                     <div className="about-feature-wrap">
@@ -106,7 +106,7 @@ function Home() {
                         <div className="media-body">
                           <h3 className="box-title">No hassle</h3>
                           <p className="box-text">
-                            Le-Zemed is super easy to use, backed up by outstanding Customer Support.
+                            SRemit is super easy to use, backed up by outstanding Customer Support.
                           </p>
                         </div>
                       </div>
@@ -216,7 +216,7 @@ function Home() {
                 </div>
               </div>
               <h6 className='text-center'>
-              <em>Choose the method that works best for you and enjoy seamless transfers with Le Zemed!</em>
+              <em>Choose the method that works best for you and enjoy seamless transfers with SRemit!</em>
               </h6>
             </div>
           </div>
@@ -237,7 +237,7 @@ function Home() {
                   <div className="choose-content">
                     <div className="mb-30">
                       <span className="sub-title">Why Choose Us?</span>
-                      <h2 className="sec-title text-white">Le-Zemed ensures secure, reliable, and hassle-free money transfers you can trust.</h2>
+                      <h2 className="sec-title text-white">SRemit ensures secure, reliable, and hassle-free money transfers you can trust.</h2>
                     </div>
                     <div className="choose-grid">
                       <div className="choose-content">
@@ -360,9 +360,9 @@ function Home() {
               <div className="row">
                 <div className="col-xl-6">
                   <div className="title-area mb-35"><span className="sub-title">Download our app</span>
-                    <h2 className="sec-title">Save time with the Le-Zemed app</h2></div>
+                    <h2 className="sec-title">Save time with the SRemit app</h2></div>
                   <p className="mt-n2 mb-25">
-                    Start your money transfer journey with the Le-Zemed app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
+                    Start your money transfer journey with the SRemit app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
                   </p>
                   <div className="checklist style3 mb-35">
                     <ul>
@@ -372,7 +372,7 @@ function Home() {
                       <li><i className="fa-solid fa-circle-check" />Pay using your favourite Payment Method</li>
                     </ul>
                   </div>
-                  <h6><em>Make your global money transfers smoother with Le-Zemed.</em></h6>
+                  <h6><em>Make your global money transfers smoother with SRemit.</em></h6>
                   <div className="btn-group mt-35">
                     <NavLink target="_blank" to="https://play.google.com/">
                       <img src="assets/img/theme-img/play-store-btn.png" alt="img" />

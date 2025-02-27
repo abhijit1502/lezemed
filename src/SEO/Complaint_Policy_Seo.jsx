@@ -5,9 +5,9 @@ function Complaint_Policy_Seo() {
     return (
         <div>
             <Helmet>
-                <title>Complaint Policy | Le-Zemed</title>
+                <title>Complaint Policy | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Complaint Policy | Le-Zemed" />
+                <meta property="og:title" content="Complaint Policy | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

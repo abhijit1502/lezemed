@@ -5,9 +5,9 @@ function Money_Transfer_to_Gambia_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Money Transfer to Gambia | Le-Zemed</title>
+                <title>Money Transfer to Gambia | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Money Transfer to Gambia | Le-Zemed" />
+                <meta property="og:title" content="Money Transfer to Gambia | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

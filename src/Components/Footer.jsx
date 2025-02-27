@@ -67,12 +67,12 @@ function Footer() {
                                         <div className="about-logo">
                                             <NavLink className="icon-masking" to="/">
                                                 {/* <span data-mask-src="assets/img/logo.svg" className="mask-icon" /> */}
-                                                <img src="assets/img/logo.svg" alt="Le-Zemed" style={{maxWidth:'50%'}}/>
+                                                <img src="assets/img/logo.svg" alt="SRemit"/>
                                             </NavLink>
                                         </div>
                                         <p className="about-text">
-                                       Le-Zemed Limited, registered with Companies House under company number 16193962, is authorized.
-                                            {/*Le-Zemed Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
+                                       SRemit Limited, registered with Companies House under company number 16193962, is authorized.
+                                            {/*SRemit Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
                                         </p>
                                         <div className="th-social">
                                             <NavLink to="https://www.facebook.com/"><i className="fab fa-facebook-f" /></NavLink>
@@ -137,8 +137,8 @@ function Footer() {
                 <div className="copyright-wrap text-center">
                     <div className="container">
                         <p className="copyright-text">
-                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
-                            {/* <NavLink to="/">Le-Zemed </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
+                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">SRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
+                            {/* <NavLink to="/">SRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
                         </p>
                     </div>
                 </div>

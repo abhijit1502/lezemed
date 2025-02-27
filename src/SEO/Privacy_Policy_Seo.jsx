@@ -5,9 +5,9 @@ function Privacy_Policy_Seo() {
     return (
         <div>
             <Helmet>
-                <title>Privacy Policy | Le-Zemed</title>
+                <title>Privacy Policy | SRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Privacy Policy | Le-Zemed" />
+                <meta property="og:title" content="Privacy Policy | SRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />
