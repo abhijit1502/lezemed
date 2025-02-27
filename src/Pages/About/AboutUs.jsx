@@ -43,7 +43,7 @@ function AboutUs() {
                                             <span className="sub-title">About Us</span>
                                             <h2 className="sec-title">SSRemit</h2>
                                             <p className="mb-2">
-                                                SSRemit is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Uthopia, Uganda, Djibouti, Africa, Somaliya, ensuring your transactions are safe, reliable, and cost-effective.
+                                                SSRemit is your trusted partner in fast, secure, and hassle-free international money transfers. We provide a seamless way to send money to Ethiopia, Uganda, Djibouti, Africa, Somalia, ensuring your transactions are safe, reliable, and cost-effective.
                                             </p>
                                             <p className="mb-2">
                                                 Our platform is designed for efficiency and transparency, offering competitive exchange rates and low transfer fees with no hidden charges. Whether you're supporting family, paying for services, or managing global transactions, SSRemit makes it easy to transfer funds with confidence.
