@@ -40,7 +40,7 @@ function DataSafety() {
                                     <div className="title-area text-center">
                                         <h2 className="sec-title sec-title2">Data Safety</h2>
                                         <p>
-                                            If you have completed your registration with SRemit but haven’t initiated any transaction, then you can send us a request to delete your account with us. Deleting your account will remove your data we have stored with us.
+                                            If you have completed your registration with SSRemit but haven’t initiated any transaction, then you can send us a request to delete your account with us. Deleting your account will remove your data we have stored with us.
                                         </p>
                                     </div>
                                 </div>

@@ -5,9 +5,9 @@ function Home_Seo() {
     return (
         <div>
             <Helmet>
-                <title>Home | SRemit</title>
+                <title>Home | SSRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Home | SRemit" />
+                <meta property="og:title" content="Home | SSRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

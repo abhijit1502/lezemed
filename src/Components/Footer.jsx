@@ -10,8 +10,8 @@ function Footer() {
         setShowCookiesConsent(false);
     };
 
-      // Check if cookies are already accepted on mount
-      useEffect(() => {
+    // Check if cookies are already accepted on mount
+    useEffect(() => {
         const cookiesAccepted = localStorage.getItem("cookiesAccepted");
         if (cookiesAccepted === "true") {
             setShowCookiesConsent(false);
@@ -57,7 +57,7 @@ function Footer() {
 
     return (
         <>
-            <footer className="footer-wrapper footer-layout4" data-bg-src="assets/img/bg/download-shape-1.png" style={{ backgroundImage: 'url("assets/img/bg/download-shape-1.png")'}}>
+            <footer className="footer-wrapper footer-layout4" data-bg-src="assets/img/bg/download-shape-1.png" style={{ backgroundImage: 'url("assets/img/bg/download-shape-1.png")' }}>
                 <div className="widget-area">
                     <div className="container">
                         <div className="row justify-content-between">
@@ -67,12 +67,12 @@ function Footer() {
                                         <div className="about-logo">
                                             <NavLink className="icon-masking" to="/">
                                                 {/* <span data-mask-src="assets/img/logo.svg" className="mask-icon" /> */}
-                                                <img src="assets/img/logo.svg" alt="SRemit"/>
+                                                <img src="assets/img/logo.svg" alt="SSRemit" />
                                             </NavLink>
                                         </div>
                                         <p className="about-text">
-                                       SRemit Limited, registered with Companies House under company number 16193962, is authorized.
-                                            {/*SRemit Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
+                                            SSRemit Limited, registered with Companies House under company number 16193962, is authorized.
+                                            {/*SSRemit Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
                                         </p>
                                         <div className="th-social">
                                             <NavLink to="https://www.facebook.com/"><i className="fab fa-facebook-f" /></NavLink>
@@ -118,7 +118,7 @@ function Footer() {
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/mail.svg" /></div>
                                             <p className="box-text">
-                                                <NavLink to="mailto:info@eremitly.com" className="box-link">aabileh@hotmail.com</NavLink>
+                                                <NavLink to="mailto:aabileh@hotmail.com" className="box-link">aabileh@hotmail.com</NavLink>
                                             </p>
                                         </div>
                                         <div className="info-box">
@@ -137,8 +137,8 @@ function Footer() {
                 <div className="copyright-wrap text-center">
                     <div className="container">
                         <p className="copyright-text">
-                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">SRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
-                            {/* <NavLink to="/">SRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
+                            Copyright ©<script type="text/javascript ">document.write(new Date().getFullYear());</script> <NavLink to="/">SSRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink>
+                            {/* <NavLink to="/">SSRemit </NavLink>All Rights Reserved. | Powered By <NavLink to="https://www.calyx-solutions.com/ " target="_blank ">Calyx Solutions.</NavLink> */}
                         </p>
                     </div>
                 </div>

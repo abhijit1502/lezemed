@@ -5,9 +5,9 @@ function Data_Safety_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Data Safety | SRemit</title>
+                <title>Data Safety | SSRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Data Safety | SRemit" />
+                <meta property="og:title" content="Data Safety | SSRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

@@ -5,9 +5,9 @@ function Money_Transfer_Seo() {
   return (
     <div>
       <Helmet>
-                <title>Money Transfer | SRemit</title>
+                <title>Money Transfer | SSRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="Money Transfer | SRemit" />
+                <meta property="og:title" content="Money Transfer | SSRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

@@ -5,9 +5,9 @@ function Error_Seo() {
   return (
     <div>
       <Helmet>
-                <title>404 | SRemit</title>
+                <title>404 | SSRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="404 | SRemit" />
+                <meta property="og:title" content="404 | SSRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />

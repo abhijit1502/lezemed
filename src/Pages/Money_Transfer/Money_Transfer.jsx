@@ -86,7 +86,7 @@ function Money_Transfer() {
             <div className="container">
               <div className="title-area text-center mb-30">
                 <span className="sub-title">Send money</span>
-                <h2 className="sec-title">Reasons to choose SRemit</h2>
+                <h2 className="sec-title">Reasons to choose SSRemit</h2>
               </div>
               <div className="process-box-area">
                 <div className="row">
@@ -162,9 +162,9 @@ function Money_Transfer() {
               <div className="row">
                 <div className="col-xl-6">
                   <div className="title-area mb-35"><span className="sub-title">Download our app</span>
-                    <h2 className="sec-title">Save time with the SRemit app</h2></div>
+                    <h2 className="sec-title">Save time with the SSRemit app</h2></div>
                   <p className="mt-n2 mb-25">
-                    Start your money transfer journey with the SRemit app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
+                    Start your money transfer journey with the SSRemit app. Download from the Play Store or App Store and enjoy exclusive benefits, including:
                   </p>
                   <div className="checklist style3 mb-35">
                     <ul>
@@ -174,7 +174,7 @@ function Money_Transfer() {
                       <li><i className="fa-solid fa-circle-check" />Pay using your favourite Payment Method</li>
                     </ul>
                   </div>
-                  <h6><em>Make your global money transfers smoother with SRemit.</em></h6>
+                  <h6><em>Make your global money transfers smoother with SSRemit.</em></h6>
                   <div className="btn-group mt-35">
                     <NavLink target="_blank" to="https://play.google.com/">
                       <img src="assets/img/theme-img/play-store-btn.png" alt="img" />

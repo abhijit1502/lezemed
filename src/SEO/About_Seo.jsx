@@ -5,9 +5,9 @@ function About_Seo() {
     return (
         <div>
             <Helmet>
-                <title>About Us | SRemit</title>
+                <title>About Us | SSRemit</title>
                 <meta name="description" content="" />
-                <meta property="og:title" content="About Us | SRemit" />
+                <meta property="og:title" content="About Us | SSRemit" />
                 <meta property="og:description" content="" />
                 <meta property="og:image" content="URL to your image" /> {/* Replace with actual image URL */}
                 <meta property="og:url" content={window.location.href} />
