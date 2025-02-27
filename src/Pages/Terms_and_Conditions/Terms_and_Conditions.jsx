@@ -236,7 +236,7 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>VII.</span> Limitations of liability</h4>
                                             <ul class="info-number-list">
-                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have the right to receive a refund, less applicable fees, or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:info@SSRemit.com'>info@SSRemit.com</NavLink> for more information regarding refunds and compensation.</li>
+                                                <li><span>A.</span>If a money transfer you ordered is delayed or fails, you may have the right to receive a refund, less applicable fees, or compensation under Money Transfer Regulations. Please contact us at <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink> for more information regarding refunds and compensation.</li>
                                                 <li><span>B.</span>Claims for refund or compensation must be supported by all available evidence.</li>
                                                 <li><span>C.</span>If a money transfer in accordance with an order you made and that we Confirmed is delayed or fails and you are not entitled to a refund or compensation under the Money Transfer Regulations, we expressly limit our liability in respect of any such delayed or failed transfer (including for any claimed refund) to the greater of: (a) the amount of any service charge that was paid to us; and (b) €600. The foregoing cap on our liability applies to any single transaction, act, omission or event and to any number of related transactions, acts, and omissions or events.</li>
                                                 <li><span>D.</span>Except as provided in clause 9.5, we shall not be liable to you or to any third party in relation to the Services, whether for breach of contract, tort (including negligence), misrepresentation, unjust enrichment or any other grounds, for any indirect, incidental, consequential or special damages including any loss of profits or savings or anticipated profits or savings, loss of data, loss of opportunity, loss or reputation, goodwill or business or any economic loss, even if we are advised in advance of the possibility of such loss.</li>
@@ -315,8 +315,8 @@ function Terms_and_Conditions() {
                                                 <li><span>A.</span>
                                                     You have a right to cancel an order before payment has been made to the Recipient. You may exercise this right by:
                                                     <ul class="info-number-list mt-3">
-                                                        <li><span>a.</span>Calling us on <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
-                                                        <li><span>b.</span>Emailing us at <NavLink to='mailto:info@SSRemit.com'>info@SSRemit.com</NavLink></li>
+                                                        <li><span>a.</span>Calling us on <NavLink to="tel:447878210109">+44 7878 210109</NavLink></li>
+                                                        <li><span>b.</span>Emailing us at <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink></li>
                                                         <li><span>c.</span>If you exercise your right to cancel the order after you have already paid us the funds to be transferred:</li>
                                                         <li><span>d.</span>we will refund money paid by you and intended for a Recipient only under the condition that it has not already been paid out to the Recipient in accordance with your original instructions prior to the cancellation request; and</li>
                                                         <li><span>e.</span>we reserve the right to retain the Fees charged for the Service (and we may charge you with those Fees if they have not yet been paid); and</li>
@@ -337,8 +337,8 @@ function Terms_and_Conditions() {
                                                 <li><span>A.</span>
                                                     We value your feedback as it helps us improve our service. We have established internal procedures for complaints. You can make a complaint in writing to us regarding any aspect of the Service by mail or e-mail to the following addresses:
                                                     <ul class="info-number-list mt-3">
-                                                        <li><span>a.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>b.</span><NavLink to='mailto:info@SSRemit.com'>info@SSRemit.com</NavLink></li>
+                                                        <li><span>a.</span>84b High Street, Southall, England, UB1 3DB</li>
+                                                        <li><span>b.</span><NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink></li>
                                                     </ul>
                                                 </li>
                                                 <li><span>B.</span>We will investigate your complaint and use reasonable endeavours to come back to you with the results of our investigation within 7 working days after receipt of your complaint.</li>
@@ -356,7 +356,7 @@ function Terms_and_Conditions() {
                                         <div className="blog-content">
                                             <h4><span>XII.</span> Money transfer and the payment services regulations</h4>
                                             <p>The Payment Services Regulations 2017 (hereinafter called "the Regulations") govern the transfer of money to recipients within the European Economic Area (being all members states of the European Union, together with Norway, Iceland and Liechtenstein), where the transfer of funds is carried out in Euros, Sterling or the currency of another EEA state which has not adopted the Euro as its currency.</p>
-                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:info@SSRemit.com'>info@SSRemit.com</NavLink> for more information.</p>
+                                            <p>The Regulations regulate payment services, which have an electronic component and place payment services providers into certain categories as well as require certain payment institutions to be authorised by the FCA and to follow conduct of business rules. Please contact us at   <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink> for more information.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -366,7 +366,7 @@ function Terms_and_Conditions() {
 
                                         <div className="blog-content">
                                             <h4><span>XIV.</span> Notices and communications</h4>
-                                            <p>All notices given to us must be in the English Language and sent to SSRemit, 12 Old Bond Street, London, England, W1S 4PWWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
+                                            <p>All notices given to us must be in the English Language and sent to SSRemit, 84b High Street, Southall, England, UB1 3DBWe may give notices to you in connection with any aspect of the Service or any order either through the e-mail address or the postal address that you provided to us or in any other way permitted pursuant these Terms and Conditions. Notices to you will be deemed received and properly served immediately after an e-mail is sent to you at the address you provided, or where a notice is sent to your postal address, one day after the date of posting in the case of domestic notices and 6 days in the case of international mail.</p>
                                         </div>
 
                                         <div className="blog-content">
@@ -447,13 +447,13 @@ function Terms_and_Conditions() {
                                             <h4><span>XXIII.</span> The company and how to get in touch</h4>
                                             <ul class="info-number-list">
                                                 <li><span>A.</span>SSRemit operates a website (the Website) that enable you to transfer money using a device connected to the Internet and/or a mobile phone.</li>
-                                                <li><span>B.</span>SSRemit  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 12 Old Bond Street, London, England, W1S 4PW</li>
+                                                <li><span>B.</span>SSRemit  is a company incorporated and licensed under the laws of the United Kingdom,  engaged in the business of funds remittance with its Head Office located at 84b High Street, Southall, England, UB1 3DB</li>
                                                 <li><span>C.</span>
                                                     We can be contacted via the following means:
                                                     <ul class="info-number-list mt-3">
-                                                        <li><span>a.</span>Telephone: <NavLink to="tel:447446228131">+44 7446 228131</NavLink></li>
-                                                        <li><span>b.</span>12 Old Bond Street, London, England, W1S 4PW</li>
-                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:info@SSRemit.com'>info@SSRemit.com</NavLink></li>
+                                                        <li><span>a.</span>Telephone: <NavLink to="tel:447878210109">+44 7878 210109</NavLink></li>
+                                                        <li><span>b.</span>84b High Street, Southall, England, UB1 3DB</li>
+                                                        <li><span>c.</span>Email using the email address: <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink></li>
                                                         <li><span>d.</span>Website: <a href="http://SSRemit.com/" target="_blank">http://SSRemit.com/</a></li>
                                                     </ul>
                                                 </li>
