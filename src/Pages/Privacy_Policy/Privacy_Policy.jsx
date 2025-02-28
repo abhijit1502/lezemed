@@ -216,7 +216,7 @@ function Privacy_Policy() {
                                                 Contacting us
                                             </h4>
                                             <p>
-                                                If you have any questions regarding this notice, or any questions relating to data protection or privacy, you can contact us at <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink>
+                                                If you have any questions regarding this notice, or any questions relating to data protection or privacy, you can contact us at <NavLink to='mailto:info@ssremit.com'>info@ssremit.com</NavLink>
                                             </p>
                                         </div>
 

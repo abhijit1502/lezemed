@@ -124,7 +124,7 @@ function ContactUs() {
                                             <div className="media-body">
                                                 <span className="contact-item_title">Email Id</span>
                                                 <span className="contact-item_text">
-                                                    <NavLink to="mailto:aabileh@hotmail.com">aabileh@hotmail.com</NavLink>
+                                                    <NavLink to="mailto:info@ssremit.com">info@ssremit.com</NavLink>
                                                 </span>
                                             </div>
                                         </div>

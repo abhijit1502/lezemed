@@ -118,7 +118,7 @@ function Footer() {
                                         <div className="info-box">
                                             <div className="box-icon"><img src="assets/img/icon/mail.svg" /></div>
                                             <p className="box-text">
-                                                <NavLink to="mailto:aabileh@hotmail.com" className="box-link">aabileh@hotmail.com</NavLink>
+                                                <NavLink to="mailto:info@ssremit.com" className="box-link">info@ssremit.com</NavLink>
                                             </p>
                                         </div>
                                         <div className="info-box">

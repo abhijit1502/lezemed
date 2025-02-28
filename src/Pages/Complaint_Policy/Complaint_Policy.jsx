@@ -41,64 +41,52 @@ function Complaint_Policy() {
                                        <div className="blog-content">
                                             <h4>Our complaints policy</h4>
                                             <p className="mb-2">
-                                                We are committed to providing a high-quality money transfer service to all our clients. When something goes wrong, we need you to tell us about it. This will help us to improve our standards.
+                                            We are committed to providing a high-quality money transfer service to all of our customers. If you
+                                            are not satisfied with the service you have received, please get in touch.
                                             </p>
-                                            <p>
-                                                If you have a complaint, please contact us with the details.
+                                            <p className="mb-2">
+                                            You can contact us in writing, by post, or e-mail via the contact details below. The address is:
                                             </p>
-                                        </div>
-                                       <div className="blog-content">
-                                            <h4>Definitions</h4>
-                                            <ul className="features two pt-2">
-                                                <li>
-                                                    By Email: <NavLink to='mailto:aabileh@hotmail.com'>aabileh@hotmail.com</NavLink>
-                                                </li>
-                                                <li>
-                                                    By Phone: <NavLink to="tel:447878210109">+44 7878 210109</NavLink>
-                                                </li>
+                                            <ul className="features two">
                                                 <li className="end">
-                                                    By Post: <NavLink to="/" target='_blank'>84b High Street, Southall, England, UB1 3DB</NavLink>
+                                                    By Post: <NavLink to="/" target='_blank'>Ssremit Ltd, 84b High Street, Southall, London, England, UB1 3DB</NavLink>
+                                                </li>
+                                                <li>
+                                                    By Email: <NavLink to='mailto:admin@ssremit.com'> admin@ssremit.com</NavLink>
                                                 </li>
                                             </ul>
-                                            <p className='mt-3'>
-                                                We have eight weeks to consider your complaint. If we have not resolved it within this time you may complain to the Financial Ombudsman Service.
+                                            <p className="mb-2">
+                                            Please provide as many details as you can in your complaint. All letters you receive from us give the
+                                            contact details of the person who sent them, and usually a reference number.
                                             </p>
-                                        </div>
-                                       <div className="blog-content">
-                                            <h4>What will happen next?</h4>
-                                            <ul className="features two pt-2">
+                                            <p className="mb-2">To help us investigate and resolve the problem as quickly as possible, please make sure you always
+                                            give us the following information:</p>
+                                            <ul className="features two">
                                                 <li>
-                                                    We will send you a letter/email acknowledging receipt of your complaint on the same day of receiving it, enclosing a copy of this procedure. If you have complained in person or on call, we will try to resolve and reach the solution the same day.
+                                                Full name and address;
                                                 </li>
                                                 <li>
-                                                    If we are unable to resolve your complaint on the same day then we will further investigate your complaint. This will normally involve finding details of your complaint, reviewing your matter by speaking to the member of staff who acted for you.
+                                                Your transaction reference number (if your complaint relates to a particular transaction);
                                                 </li>
                                                 <li>
-                                                    We will respond to you within 7 days with our Final Response which may be a remedial action.
-                                                </li>
-                                                <li className="end">
-                                                    If you are still not satisfied, you can then contact the Financial Ombudsman Service, about your complaint. Normally, you will need to bring a complaint to the Financial Ombudsman Service within six months of receiving a final written response from us about your complaint. For further information, you should contact the Financial Ombudsman Service on:
-                                                    <ul className='pt-3'>
-                                                        <li>
-                                                            Online: <NavLink to="https://www.financial-ombudsman.org.uk/" target='_blank'>https://www.financial-ombudsman.org.uk/</NavLink>
-                                                        </li>
-                                                        <li>
-                                                            Email: <NavLink to="mailto:complaint.info@financial-ombudsman.org.uk">complaint.info@financial-ombudsman.org.uk</NavLink> ,
-                                                        </li>
-                                                        <li>
-                                                            By post: The Financial Ombudsman Service Exchange Tower, London, E14 9SR
-                                                        </li>
-                                                        <li>
-                                                            Phone: <NavLink to="tel:08000234567">0800 023 4 567</NavLink> (free), <NavLink to="tel:03001239123">0300 123 9 123</NavLink>, weekdays from 8:00am - 8:00pm (GMT), and on Saturday from 9:00 - 1:00pm (GMT).
-                                                        </li>
-                                                    </ul>
+                                                Your daytime phone number (if possible); and
                                                 </li>
                                                 <li>
-                                                    If you're not in the UK, call <NavLink to="tel:447878210109">+44 7878 210109</NavLink>.
+                                                Full details of your concern or complaint, including any previous dealings with us about it;
+                                                </li>
+                                                <li>
+                                                Copies of any relevant documents such as letters;
+                                                </li>
+                                                <li>
+                                                Details of what would you like us to do.
                                                 </li>
                                             </ul>
+                                            <p className='mb-2'>
+                                            We acknowledge the receipt of your complaint in writing within 48 hours and confirm who handles
+                                            your complaint, and how you can contact them.
+                                            </p>
                                             <p>
-                                                FOS will not charge you for making a complaint and if you are not satisfied with the outcome you can still bring legal proceedings. In addition, please note that disputes may also be submitted for online resolution via the European Online Dispute Resolution Platform accessible at: <NavLink to="http://ec.europa.eu/odr" target='_blank'>http://ec.europa.eu/odr</NavLink>
+                                            We shall investigate your concerns and respond to you promptly and at the latest within 15 days
                                             </p>
                                         </div>
                                     </div>
