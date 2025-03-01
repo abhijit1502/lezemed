@@ -15,6 +15,7 @@ import Privacy_Policy from "./Pages/Privacy_Policy/Privacy_Policy";
 import Complaint_Policy from "./Pages/Complaint_Policy/Complaint_Policy";
 import Terms_and_Conditions from "./Pages/Terms_and_Conditions/Terms_and_Conditions";
 import Money_Transfer from "./Pages/Money_Transfer/Money_Transfer";
+import Customer_Duty from "./Pages/Customer_Duty/Customer_Duty";
 
 function App() {
   const { pathname } = useLocation();
@@ -40,6 +41,7 @@ function App() {
       <Route path="/complaint-policy" element={<Complaint_Policy />} /> 
       <Route path="/terms-and-conditions" element={<Terms_and_Conditions />} /> 
       <Route path="/money-transfer" element={<Money_Transfer />} /> 
+      <Route path="/customer-duty" element={<Customer_Duty />} /> 
       </Routes>
       
     </div>

@@ -102,6 +102,7 @@ function Footer() {
                                             <li><NavLink to="/terms-and-conditions">Terms and Conditions</NavLink></li>
                                             <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
                                             <li><NavLink to="/complaint-policy">Complaint Policy</NavLink></li>
+                                            <li><NavLink to="/customer-duty">Customer Duty</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
