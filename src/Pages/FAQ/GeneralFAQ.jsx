@@ -167,11 +167,17 @@ function GeneralFAQ() {
                       <div id="collapse-8" className="accordion-collapse collapse" aria-labelledby="collapse-item-8" data-bs-parent="#faqAccordion">
                         <div className="accordion-body">
                           <ul className="list">
-                            <li>Age: 18 years and above</li>
+                            <li>Full name and address;</li>
+                            <li>Your transaction reference number (if your complaint relates to a particular transaction);</li>
+                            <li>Your daytime phone number (if possible); and</li>
+                            <li>Full details of your concern or complaint, including any previous dealings with us about it;</li>
+                            <li>Copies of any relevant documents such as letters;</li>
+                            <li>Details of what would you like us to do.</li>
+                            {/* <li>Age: 18 years and above</li>
                             <li>We will verify your identity, this will not affect your credit ratings</li>
                             <li>You must be resident of the UK</li>
                             <li>Activation of account will be based on the documents you provide</li>
-                            <li>Monthly sending limits may apply</li>
+                            <li>Monthly sending limits may apply</li> */}
                           </ul>
                         </div>
                       </div>

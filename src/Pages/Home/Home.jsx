@@ -40,7 +40,7 @@ function Home() {
                       International <span className="square-text text-white">Money Transfer</span>
                     </h1>
                     <p className="hero-text">
-                    Start your money transfer journey with the SSRemit app! Download from the Play Store or App Store to send money quickly, securely, and affordably. SSRemit makes international transfers fast, reliable, and hassle-free. for a few seconds.
+                    Start your money transfer journey with the SSRemit app! Download from the Play Store or App Store to send money quickly, securely, and affordably. SSRemit makes international transfers fast, reliable, and hassle-free.
                     </p>
                     <div className="btn-group mt-5">
                       <NavLink to="/">
@@ -160,7 +160,7 @@ function Home() {
                           <h5 className>Transfer with our app</h5>
                         </div>
                         <p className="process-text">
-                        Download our app on the app store and play store Sign up and start sending money seamlessly.
+                        Download our app on the app store and play store, Sign up and start sending money seamlessly.
                         </p>
                       </div>
                       <div className="process-content">

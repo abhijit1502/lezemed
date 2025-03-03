@@ -39,7 +39,7 @@ function Customer_Duty() {
                                 <div className="col-lg-12">
                                     <div className="th-blog">
                                         <div className="blog-content">
-                                            <h4>How Ssremit Ltd Handles the FCA’s Consumer Duty</h4>
+                                            <h4>How SSremit Ltd Handles the FCA’s Consumer Duty</h4>
                                             <p>At Ssremit Ltd, we are committed to delivering the highest customer protection standards and ensuring positive outcomes for all our clients. We align our practices with the FCA’s Consumer Duty by focusing on the following four key areas:</p>
 
                                             <h6>1. Services and Services</h6>
@@ -58,14 +58,13 @@ function Customer_Duty() {
                                             <p>Educational Resources: We offer educational materials and tools to help customers make informed decisions about the use of the service.</p>
 
                                             <h6>4. Consumer Support</h6>
-
                                             <p className="mb-2">Accessible Support: We provide multiple channels for customer support, including phone, email, and live chat, to ensure customers can easily reach us.</p>
                                             <p className="mb-2">Timely Assistance: Our customer support team is trained to respond promptly and effectively to inquiries, complaints, and requests for assistance.</p>
                                             <p>Proactive Engagement: We proactively reach out to customers when we identify potential issues or changes that may affect them, ensuring they are fully supported throughout their journey with us.</p>
 
 
                                             <h4>Our Commitment</h4>
-                                            <p >At Ssremit Ltd, we prioritize our customers’ best interests at every stage of their interaction with us. We regularly review and update our policies, procedures, and practices to ensure compliance with the FCA’s Consumer Duty and to deliver the best possible outcomes for our customers.</p>
+                                            <p >At SSremit Ltd, we prioritize our customers’ best interests at every stage of their interaction with us. We regularly review and update our policies, procedures, and practices to ensure compliance with the FCA’s Consumer Duty and to deliver the best possible outcomes for our customers.</p>
 
                                         </div>
                                     </div>

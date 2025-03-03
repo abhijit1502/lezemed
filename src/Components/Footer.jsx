@@ -71,8 +71,8 @@ function Footer() {
                                             </NavLink>
                                         </div>
                                         <p className="about-text">
-                                            SSRemit Limited, registered with Companies House under company number 16193962, is authorized.
-                                            {/*SSRemit Limited, registered with Companies House under company number 15867016, is authorized and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
+                                            SSRemit Limited, registered with Companies House under company number 16193962, is authorised.
+                                            {/*SSRemit Limited, registered with Companies House under company number 15867016, is authorised and regulated by the FCA under Firm Reference Number [insert FRN if applicable]. */}
                                         </p>
                                         <div className="th-social">
                                             <NavLink to="https://www.facebook.com/"><i className="fab fa-facebook-f" /></NavLink>
@@ -96,7 +96,7 @@ function Footer() {
                             </div>
                             <div className="col-md-6 col-xl-auto">
                                 <div className="widget widget_nav_menu footer-widget">
-                                    <h3 className="widget_title">Legals Links</h3>
+                                    <h3 className="widget_title">Legal Links</h3>
                                     <div className="menu-all-pages-container">
                                         <ul className="menu">
                                             <li><NavLink to="/terms-and-conditions">Terms and Conditions</NavLink></li>

@@ -414,7 +414,7 @@ function Calculator() {
               </div>
               <div className="col-lg-12 col-md-12">
                 <div className="form-group">
-                  <label htmlFor="send_money">When you send GBP</label>
+                  <label htmlFor="send_money">When you send EUR</label>
                   <input
                     type="text"
                     id="Number1"
@@ -438,7 +438,7 @@ function Calculator() {
                         baseCurrencyData.find(
                           (currency) => currency.baseCurrencyID.toString() === baseCurrencyId
                         )?.countryFlag ||
-                        "images/flags/gbp.png" // Hardcoded fallback image path
+                        "images/flags/eur.png" // Hardcoded fallback image path
                       }
                       alt="Selected Country Flag"
                       style={{ marginRight: "10px", verticalAlign: "middle" }}
