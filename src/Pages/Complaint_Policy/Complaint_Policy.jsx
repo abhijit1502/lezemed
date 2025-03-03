@@ -130,8 +130,7 @@ function Complaint_Policy() {
                                                     By post: The Financial Ombudsman, Exchange Tower, London, E14 9SR.
                                                 </li>
                                                 <li>
-                                                    Telephone: <NavLink to="tel:08000234567">0800 023 4567</NavLink> or <NavLink to="tel:0300 123 9123">0300 123 9123</NavLink>
-                                                    Weekdays from 8:00am-8:00pm (GMT), and on Saturday from 9:00am-1:00pm (GMT).
+                                                    Telephone: <NavLink to="tel:08000234567">0800 023 4567</NavLink> or <NavLink to="tel:0300 123 9123">0300 123 9123</NavLink> Weekdays from 8:00am-8:00pm (GMT), and on Saturday from 9:00am-1:00pm (GMT).
                                                 </li>
                                             </ul>
                                             <p className='mb-2'>
